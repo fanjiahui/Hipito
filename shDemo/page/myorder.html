@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit"><!-- 默认360极速内核 -->
+	<title>我的订单</title>
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/style.css">
+	<!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+      <script src="../js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">您好，欢迎光临95306！</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="#">购物车</a></li>
+            <li><a href="#about">我的最爱</a></li>
+            <li><a href="#contact">我的订单</a></li>
+            <li><a href="#">会员中心</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">快速注册</a></li>
+            <li><a href="#">会员登录</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+	<div class="container">
+	<div class="high190">
+	      <div class="navbarbg">
+	        <div class="row mg0">
+				<div class="col-lg-3 logo col-xs-3"></div>
+				<div class="col-lg-6 col-xs-6">
+					<div class="searchBarBox">
+						<div class="input-group">
+						  <div class="input-group-btn">
+						    <!-- Button and dropdown menu -->
+						    <button type="button" id="searchDropdownType" class="btn btn-default dropdown-toggle icon_white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    <span>宝贝</span> <span class="caret"></span>
+							  </button>
+							  <ul class="dropdown-menu">
+							    <li><a href="#">宝贝</a></li>
+							    <li><a href="#">店铺</a></li>
+							  </ul>
+						  </div>
+						  <input type="text" class="form-control" placeholder="输入关键字">
+					      <span class="input-group-btn">
+					        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search icon_white" aria-hidden="true"></span></button>
+					      </span>
+						</div>
+							
+					</div>
+				</div>
+				<div class="col-lg-3 telPhn col-xs-3"></div>
+			</div>
+	      </div>
+		</div>
+      <div class="row mg0">
+        <div class="col-lg-2 col-xs-2 mgBot70">
+			<div class="lineBox">
+				<h4 class="yellow"><img src="../img/trainIcon_yellow.png" /> 会员管理</h4>
+				<dl class="trainDl">
+					<dt>我的资料管理</dt>
+					<dd><a href="#">修改个人资料</a></dd>
+					<dd><a href="#">修改密码</a></dd>
+					<dd><a href="#">收件人管理</a></dd>
+					<dt>我的最爱</dt>
+					<dd><a href="#">最爱商店</a></dd>
+					<dd><a href="#">最爱宝贝</a></dd>
+					<dt>我的交易管理</dt>
+					<dd><a href="#">我的订单</a></dd>
+					<dd><a href="#">退货处理</a></dd>
+					<dt>我的积分管理</dt>
+					<dd><a href="#">积分记录查询</a></dd>
+				</dl>
+			</div>
+        </div>
+
+        <div class="col-lg-10 col-xs-10 ">
+       		<div class="lineBox">
+				<h4 class="green">&ensp;我的订单</h4>
+				<div class="srhArea">
+					<div class="btn-group">
+					  	<button type="button" class="btn btn-default">全部状态</button>
+					  	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    	<span class="caret"></span>
+					    	<span class="sr-only">Toggle Dropdown</span>
+					  	</button>
+					  	<ul class="dropdown-menu">
+						    <li><a href="#">全部状态</a></li>
+						    <li><a href="#">订单状态</a></li>
+					  	</ul>
+					</div>
+
+					<div class="input-group">
+				        <input type="text" class="form-control" placeholder="商品名称/商品编号/订单号">
+				        <span class="input-group-addon"><img src="../img/srhBtn.png" height="18" width="18" alt=""></span>
+			      	</div>
+				</div>
+				<ul class="tbhead">
+					<li class="tbW128">
+						<div class="ordertime-cont">
+							<div class="time-txt">近三个月订单<b class="glyphicon glyphicon-menu-down"></b><span class="blank"></span></div>
+							<div class="time-list">
+                                <ul>
+                                    <li><a href="#none"  class="curr"><b glyphicon glyphicon-ok></b>近三个月订单</a></li>
+                                    <li><a href="#none" ><b></b>今年内订单</a></li>
+                                    <li><a href="#none" ><b></b>2015年订单</a></li>
+                                    <li><a href="#none" ><b></b>2014年订单</a></li>
+                                    <li><a href="#none" ><b></b>2013年订单</a></li>
+                                    <li><a href="#none" ><b></b>2013年以前订单</a></li>
+                                </ul>
+                            </div>
+						</div>
+					</li>
+					<li class="tbW227">订单详情</li>
+					<li class="tbW113">收货人</li>
+					<li class="tbW113">总计</li>
+					<li class="tbW124">
+						<div class="ordertime-cont">
+						<div class="time-txt">全部状态<b class="glyphicon glyphicon-menu-down"></b><span class="blank"></span></div>
+							<div class="time-list">
+                                <ul>
+                                    <li><a href="#none"  class="curr"><b glyphicon glyphicon-ok></b>全部状态</a></li>
+                                    <li><a href="#none" ><b></b>等待付款</a></li>
+                                    <li><a href="#none" ><b></b>等待收货</a></li>
+                                    <li><a href="#none" ><b></b>已完成</a></li>
+                                    <li><a href="#none" ><b></b>已取消</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        </li>
+					<li class="tbW168">操作</li>
+				</ul>
+				<table class="orderTable">
+					<thead>
+						<tr>
+							<th class="tbW128">2015-12-24</th>
+							<th class="tbW227">订单号：896143537</th>
+							<th class="tbW113"></th>
+							<th class="tbW113"></th>
+							<th class="tbW124"></th>
+							<th class="tbW168"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td colspan='2'>
+								<div class="ordGood">
+									<div class="tbcell"><img src="../img/test/ex01.jpg"></div>
+									<div class="tbcell"><span class="goodsName">宾豪行李箱宾豪行李箱宾豪行李箱宾豪行李箱宾豪行李箱宾豪行李箱宾豪行李箱宾豪行李箱宾豪行李箱宾豪行李箱宾豪行李箱宾豪行李箱宾豪行李箱宾豪行李箱宾豪行李箱宾豪行李箱宾豪行李箱宾豪行李箱宾豪行李箱宾豪行李箱</span></div>
+									<div class="tbcell"><span class="goodsNum">1</span></div>
+								</div>
+								<div class="ordGood">
+									<div class="tbcell"><img src="../img/test/ex01.jpg"></div>
+									<div class="tbcell"><span class="goodsName">宾豪行李箱</span></div>
+									<div class="tbcell"><span class="goodsNum">1</span></div>
+								</div>
+								<div class="ordGood">
+									<div class="tbcell"><img src="../img/test/ex01.jpg"></div>
+									<div class="tbcell"><span class="goodsName">宾豪行李箱</span></div>
+									<div class="tbcell"><span class="goodsNum">1</span></div>
+								</div>
+							</td>
+					
+							<td class="vTop" >戴小明</td>
+							<td class="vTop" ><span class='red'>￥</span><span class='red'>309.00</span><p class='plink gray'>在線支付</p></td>
+							<td class="vTop" >
+								<p class="w100 orange"><span class='waitPayIcon'></span>等待付款</p>
+								<p class="w100 plink"><span class='logisticsIcon'></span>跟踪</p>
+								<p class="w100 plink"><span class='orderDteailIcon'></span>订单详情</p>
+							</td>
+							<td class="vTop" >
+								<div class='waitTimePay'><span class="glyphicon glyphicon-time"></span>剩餘24小時48分</div>
+								<p class='plink'>请人代付</p>
+								<p class='plink'>取消订单</p>
+							</td>
+						</tr>
+						
+
+
+					</tbody>
+					
+				</table>
+
+				<!-- 页码 -->
+			    <nav class="hasTrainPic">
+				  <ul class="pagination">
+				    <li class="disabled">
+				      <a href="#" aria-label="Previous">
+				        <span aria-hidden="true">&laquo;</span>
+				      </a>
+				    </li>
+				    <li class="active"><a href="#">1</a></li>
+				    <li><a href="#">2</a></li>
+				    <li><a href="#">3</a></li>
+				    <li><a href="#">4</a></li>
+				    <li><a href="#">5</a></li>
+				    <li>
+				      <a href="#" aria-label="Next">
+				        <span aria-hidden="true">&raquo;</span>
+				      </a>
+				    </li>
+				  </ul>
+				  <div class="pagInfo">共<span>15</span>页，到第<input type="text" value="1" />页 <button class="btn btn-default" type="submit">确定</button></div>
+				</nav>
+				
+				
+			</div>
+          	
+        </div>
+      </div>
+
+<!-- 多快好省 -->
+		<div class="row bgltGray mg0">
+			<div class="col-lg-3 col-xs-3"><div class="cover"><span class="sixIcon">多</span>品类齐全 轻松购物</div></div>
+			<div class="col-lg-3 col-xs-3"><div class="cover"><span class="sixIcon">快</span>多仓快发 急速配送</div></div>
+			<div class="col-lg-3 col-xs-3"><div class="cover"><span class="sixIcon">好</span>正品行货 精致服务</div></div>
+			<div class="col-lg-3 col-xs-3"><div class="cover"><span class="sixIcon">省</span>天天低价 畅选无忧</div></div>
+		</div>
+
+		<div class="row mg0">
+			<div class="col-lg-3 col-xs-3 pd0"><div class="mod">
+				<dl class="mod-wrap">
+					<dt>新手指南</dt>
+					<dd><a href="#">新用户注册</a></dd>
+					<dd><a href="#">购买流程</a></dd>
+					<dd><a href="#">用户协议</a></dd>
+				</dl>
+			</div></div>
+			<div class="col-lg-3 col-xs-3 pd0"><div class="mod">
+				<dl class="mod-wrap">
+					<dt>付款配送方式</dt>
+					<dd><a href="#">付款方式</a></dd>
+					<dd><a href="#">常见支付问题</a></dd>
+					<dd><a href="#">配送方式及范围</a></dd>
+					<dd><a href="#">配送常见问题</a></dd>
+				</dl>
+			</div></div>
+			<div class="col-lg-3 col-xs-3 pd0"><div class="mod">
+				<dl class="mod-wrap">
+					<dt>售后服务</dt>
+					<dd><a href="#">退换货流程</a></dd>
+					<dd><a href="#">退换货政策</a></dd>
+				</dl>
+			</div></div>
+			<div class="col-lg-3 col-xs-3 pd0"><div class="mod mod_last">
+				<dl class="mod-wrap">
+					<dt>客服中心</dt>
+					<dd><a href="#">常见问题解答</a></dd>
+					<dd><a href="#">联系客服中心</a></dd>
+					<dd><a href="#">投诉及建议</a></dd>
+				</dl>
+			</div></div>
+		</div>
+     
+
+
+    </div>
+<footer class="blog-footer">
+      <p>中国铁路总公司 | 电话：95306 | 北京市海淀区复兴路10号 | 京ICP备15003716号-1</p>
+      <p>
+        Copyright&copy; 2015 中国铁路信息技术中心 版权所有
+      </p>
+</footer>
+
+	<script src="../js/jquery-1.12.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function () {
+
+        	//搜索框的下拉组件，点击事件，显示搜索的类型
+        	$('#searchDropdownType').next().children().click(function(){
+        		$("#searchDropdownType span:first").text($(this).text());
+        	});
+        	
+        	
+        });
+
+		
+    </script>
+</body>
+</html>

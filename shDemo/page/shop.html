@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit"><!-- 默认360极速内核 -->
+	<title>商品详情</title>
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/style.css">
+	<!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+      <script src="../js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">您好，欢迎光临95306！</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="#">购物车</a></li>
+            <li><a href="#about">我的最爱</a></li>
+            <li><a href="#contact">我的订单</a></li>
+            <li><a href="#">会员中心</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">快速注册</a></li>
+            <li><a href="#">会员登录</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+	<div class="container">
+	<div class="high190">
+      <div class="navbarbg">
+        <div class="row mg0">
+			<div class="col-lg-3 logo col-xs-3"></div>
+			<div class="col-lg-6 col-xs-6">
+				<div class="searchBarBox">
+					<div class="input-group">
+					  <div class="input-group-btn">
+					    <!-- Button and dropdown menu -->
+					    <button type="button" id="searchDropdownType" class="btn btn-default dropdown-toggle icon_white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    <span>宝贝</span> <span class="caret"></span>
+						  </button>
+						  <ul class="dropdown-menu">
+						    <li><a href="#">宝贝</a></li>
+						    <li><a href="#">店铺</a></li>
+						  </ul>
+					  </div>
+					  <input type="text" class="form-control" placeholder="输入关键字">
+				      <span class="input-group-btn">
+				        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search icon_white" aria-hidden="true"></span></button>
+				      </span>
+					</div>
+						
+				</div>
+			</div>
+			<div class="col-lg-3 telPhn col-xs-3"></div>
+		</div>
+      </div>
+	
+      <div class="row mg0">
+        
+
+        <div class="col-lg-12 bgOrge col-xs-12">
+          <ul class="nav navbar-nav navTopLink">
+          	<li><a href="#">商铺首页</a></li>
+          	<li><a href="#">所有商品</a></li>
+          	<li><a href="#">人气推荐</a></li>
+          	<li><a href="#">商铺公共</a></li>
+          	<li><a href="#">联系方式</a></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+
+      <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="../img/test/95306_ad.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>一些说明</h1>
+              <p>一些介绍，高端大气，一些介绍，高端大气，一些介绍，高端大气，一些介绍，高端大气，一些介绍，高端大气，一些介绍，高端大气，一些介绍，高端大气，一些介绍，高端大气，</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">功能按钮</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>一些说明22222</h1>
+              <p>一些介绍，高端大气，一些介绍，高端大气，一些介绍，高端大气，一些介绍，高端大气，一些介绍，高端大气，一些介绍，高端大气，一些介绍，高端大气，一些介绍，高端大气.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">奖券？</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">上一张</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">下一张</span>
+      </a>
+    </div><!-- /.carousel -->
+
+
+    <hr class="grayLine" />
+	<div class="row mg0">
+        <div class="col-lg-2 col-xs-2 mgBot70 w210">
+			<div class="lineBox2">
+				<dl class="trainDl">
+					<dt>商铺信息</dt>
+
+				</dl>
+				<div class="shopLogo"><img src="../img/test/shop01.png" alt="商店logo" /></div>
+				<dl class="shopDl">
+					<dt>华约箱包专营店</dt>
+					<dd><span class="dltd w70">公司名称：</span><span class="dltd">上海华阅信息科技有限公司</span></dd>
+					<dd><span class="dltd w70">服务电话：</span><span class="dltd">4008202856 </span></dd>
+					<dd><span class="dltd w70">售后电话：</span><span class="dltd">4008202856 </span></dd>
+					<dd><span class="dltd w70">在线客服：</span><span class="dltd"><a href="#" class="telme"></a></span></dd>
+					<dt>店铺动态评分</dt>
+					<dd>
+						<span class="dltd w70">描述相符：</span>
+						<span class="dltd">
+							4.9<span class="star"><span style="width:100%;"><img src="../img/star.png" width="100" height="20"></span></span>
+						</span>
+					</dd>
+					<dd>
+						<span class="dltd w70">服务态度：</span>
+						<span class="dltd">
+							4.0<span class="star"><span style="width:80%;"><img src="../img/star.png" width="100" height="20"></span></span>
+						</span>
+					</dd>
+					<dd>
+						<span class="dltd w70">发货速度：</span>
+						<span class="dltd">
+							4.0<span class="star"><span style="width:80%;"><img src="../img/star.png" width="100" height="20"></span></span>
+						</span>
+					</dd>
+				</dl>
+				<a href="#" class="enterShop">进入店铺</a><a href="#" class="starShop">收藏店铺</a>
+				<img src="../img/test/ex03.jpg" alt="广告" class="shopAd"/>
+				<dl class="trainDl">
+					<dt>商品分类</dt>
+					<dd><a href="#">旅行包</a></dd>
+					<dd><a href="#">双肩包</a></dd>
+					<dd><a href="#">登机包</a></dd>
+					<dd><a href="#">旅行包</a></dd>
+					<dd><a href="#">双肩包</a></dd>
+					<dd><a href="#">登机包</a></dd>
+					<dd><a href="#">旅行包</a></dd>
+					<dd><a href="#">双肩包</a></dd>
+					<dd><a href="#">登机包</a></dd>
+				</dl>
+			</div>
+        </div>
+
+        <div class="col-lg-10 col-xs-10 w975">
+        	<div class="row J_sort">
+		      	<div class="m-sortbar" id="J_relative">
+		 		 <div class="sort-row">
+			      	<div class="sort-inner">
+							    <ul class="sorts">
+								      <li class="sort">
+								        <a class="J_Ajax link first" title="排序" href="javascript:void(0)">排序</a>
+								      </li>
+								    <li class="sort">
+								        <a class="J_Ajax link" title="综合" href="javascript:void(0)">综合</a>
+								      </li>
+								  
+								      <li class="sort">
+								        <a class="J_Ajax link  " title="销量从高到低" href="javascript:void(0)">销量 <span class="glyphicon glyphicon-arrow-down"></span></a>
+								      </li>
+								    
+								      <li class="sort has-droplist J_LaterHover">
+								      	<a class="J_Ajax link  " title="价格从低到高" href="javascript:void(0)">价格 <span class="glyphicon glyphicon-arrow-down"></span></a>
+								      </li>	 
+								      <li class="sort">
+								        <a class="J_Ajax link  " title="上市时间从高到低" href="javascript:void(0)">上市时间 <span class="glyphicon glyphicon-arrow-down"></span></a>
+								      </li>
+								     
+								</ul>
+							     
+
+					</div>
+					</div>
+			      </div>
+		      </div>
+		<!-- 商品详情和热门排行 -->
+			<div class="spMgList" id="searchListBox">
+				<div class="discover-item3">
+					<div class="imgBox"><img src="../img/test/ex01.png" alt=""></div>
+					<div class="item-desc">
+						<h4>宾豪 pc 拉杆箱万向轮旅行箱男女登机箱</h4>
+						<div class="item-comment zhijiang"><em>¥</em><em class="tb-rmb-num">249.00</em></div>
+					</div>
+					<span class="dottSpan">评价: <span>3万</span></span>
+					<span class="dottSpan">已售: <span>3万</span></span>
+					<span class="dottSpan2"><a href="#" class="orgBtn">收藏</a></span>
+					<span class="dottSpan2"><a href="#" class="redLink">购买</a></span>
+					<a href="#" class="shopName">花月箱包专营店</a>
+				</div>
+				<div class="discover-item3">
+					<div class="imgBox"><img src="../img/test/ex01.png" alt=""></div>
+					<div class="item-desc">
+						<h4>宾豪 PC拉杆箱万向轮旅行箱24寸行李箱男女20寸登机旅行箱</h4>
+						<div class="item-comment zhijiang"><em>¥</em><em class="tb-rmb-num">249.00</em></div>
+					</div>
+					<span class="dottSpan">评价: <span>3万</span></span>
+					<span class="dottSpan">已售: <span>3万</span></span>
+					<span class="dottSpan2"><a href="#" class="orgBtn">收藏</a></span>
+					<span class="dottSpan2"><a href="#" class="redLink">购买</a></span>
+					<a href="#" class="shopName">花月箱包专营店</a>
+				</div>
+				<div class="discover-item3">
+					<div class="imgBox"><img src="../img/test/ex01.png" alt=""></div>
+					<div class="item-desc">
+						<h4>宾豪 pc 拉杆箱万向轮旅行箱男女登机箱</h4>
+						<div class="item-comment zhijiang"><em>¥</em><em class="tb-rmb-num">249.00</em></div>
+					</div>
+					<span class="dottSpan">评价: <span>3万</span></span>
+					<span class="dottSpan">已售: <span>3万</span></span>
+					<span class="dottSpan2"><a href="#" class="orgBtn">收藏</a></span>
+					<span class="dottSpan2"><a href="#" class="redLink">购买</a></span>
+					<a href="#" class="shopName">花月箱包专营店</a>
+				</div>
+				<div class="discover-item3">
+					<div class="imgBox"><img src="../img/test/ex01.png" alt=""></div>
+					<div class="item-desc">
+						<h4>宾豪 pc 拉杆箱万向轮旅行箱男女登机箱</h4>
+						<div class="item-comment zhijiang"><em>¥</em><em class="tb-rmb-num">249.00</em></div>
+					</div>
+					<span class="dottSpan">评价: <span>3万</span></span>
+					<span class="dottSpan">已售: <span>3万</span></span>
+					<span class="dottSpan2"><a href="#" class="orgBtn">收藏</a></span>
+					<span class="dottSpan2"><a href="#" class="redLink">购买</a></span>
+					<a href="#" class="shopName">花月箱包专营店</a>
+				</div>
+				<div class="discover-item3">
+					<div class="imgBox"><img src="../img/test/ex01.png" alt=""></div>
+					<div class="item-desc">
+						<h4>宾豪 pc 拉杆箱万向轮旅行箱男女登机箱</h4>
+						<div class="item-comment zhijiang"><em>¥</em><em class="tb-rmb-num">249.00</em></div>
+					</div>
+					<span class="dottSpan">评价: <span>3万</span></span>
+					<span class="dottSpan">已售: <span>3万</span></span>
+					<span class="dottSpan2"><a href="#" class="orgBtn">收藏</a></span>
+					<span class="dottSpan2"><a href="#" class="redLink">购买</a></span>
+					<a href="#" class="shopName">花月箱包专营店</a>
+				</div>
+				<div class="discover-item3">
+					<div class="imgBox"><img src="../img/test/ex01.png" alt=""></div>
+					<div class="item-desc">
+						<h4>宾豪 pc 拉杆箱万向轮旅行箱男女登机箱</h4>
+						<div class="item-comment zhijiang"><em>¥</em><em class="tb-rmb-num">249.00</em></div>
+					</div>
+					<span class="dottSpan">评价: <span>3万</span></span>
+					<span class="dottSpan">已售: <span>3万</span></span>
+					<span class="dottSpan2"><a href="#" class="orgBtn">收藏</a></span>
+					<span class="dottSpan2"><a href="#" class="redLink">购买</a></span>
+					<a href="#" class="shopName">花月箱包专营店</a>
+				</div>
+				<div class="discover-item3">
+					<div class="imgBox"><img src="../img/test/ex01.png" alt=""></div>
+					<div class="item-desc">
+						<h4>宾豪 pc 拉杆箱万向轮旅行箱男女登机箱</h4>
+						<div class="item-comment zhijiang"><em>¥</em><em class="tb-rmb-num">249.00</em></div>
+					</div>
+					<span class="dottSpan">评价: <span>3万</span></span>
+					<span class="dottSpan">已售: <span>3万</span></span>
+					<span class="dottSpan2"><a href="#" class="orgBtn">收藏</a></span>
+					<span class="dottSpan2"><a href="#" class="redLink">购买</a></span>
+					<a href="#" class="shopName">花月箱包专营店</a>
+				</div>
+				<div class="discover-item3">
+					<div class="imgBox"><img src="../img/test/ex01.png" alt=""></div>
+					<div class="item-desc">
+						<h4>宾豪 pc 拉杆箱万向轮旅行箱男女登机箱</h4>
+						<div class="item-comment zhijiang"><em>¥</em><em class="tb-rmb-num">249.00</em></div>
+					</div>
+					<span class="dottSpan">评价: <span>3万</span></span>
+					<span class="dottSpan">已售: <span>3万</span></span>
+					<span class="dottSpan2"><a href="#" class="orgBtn">收藏</a></span>
+					<span class="dottSpan2"><a href="#" class="redLink">购买</a></span>
+					<a href="#" class="shopName">花月箱包专营店</a>
+				</div>
+				<div class="discover-item3">
+					<div class="imgBox"><img src="../img/test/ex01.png" alt=""></div>
+					<div class="item-desc">
+						<h4>宾豪 pc 拉杆箱万向轮旅行箱男女登机箱</h4>
+						<div class="item-comment zhijiang"><em>¥</em><em class="tb-rmb-num">249.00</em></div>
+					</div>
+					<span class="dottSpan">评价: <span>3万</span></span>
+					<span class="dottSpan">已售: <span>3万</span></span>
+					<span class="dottSpan2"><a href="#" class="orgBtn">收藏</a></span>
+					<span class="dottSpan2"><a href="#" class="redLink">购买</a></span>
+					<a href="#" class="shopName">花月箱包专营店</a>
+				</div>
+				<div class="discover-item3">
+					<div class="imgBox"><img src="../img/test/ex01.png" alt=""></div>
+					<div class="item-desc">
+						<h4>宾豪 pc 拉杆箱万向轮旅行箱男女登机箱</h4>
+						<div class="item-comment zhijiang"><em>¥</em><em class="tb-rmb-num">249.00</em></div>
+					</div>
+					<span class="dottSpan">评价: <span>3万</span></span>
+					<span class="dottSpan">已售: <span>3万</span></span>
+					<span class="dottSpan2"><a href="#" class="orgBtn">收藏</a></span>
+					<span class="dottSpan2"><a href="#" class="redLink">购买</a></span>
+					<a href="#" class="shopName">花月箱包专营店</a>
+				</div>
+
+				
+			</div>
+
+			<nav class="hasTrainPic">
+			  <ul class="pagination">
+			    <li class="disabled">
+			      <a href="#" aria-label="Previous">
+			        <span aria-hidden="true">&laquo;</span>
+			      </a>
+			    </li>
+			    <li class="active"><a href="#">1</a></li>
+			    <li><a href="#">2</a></li>
+			    <li><a href="#">3</a></li>
+			    <li><a href="#">4</a></li>
+			    <li><a href="#">5</a></li>
+			    <li>
+			      <a href="#" aria-label="Next">
+			        <span aria-hidden="true">&raquo;</span>
+			      </a>
+			    </li>
+			  </ul>
+			  <div class="pagInfo">共<span>15</span>页，到第<input type="text" value="1" />页 <button class="btn btn-default" type="submit">确定</button></div>
+			</nav>
+	    </div>
+	</div>
+<!-- 多快好省 -->
+		<div class="row bgltGray mg0">
+			<div class="col-lg-3 col-xs-3"><div class="cover"><span class="sixIcon">多</span>品类齐全 轻松购物</div></div>
+			<div class="col-lg-3 col-xs-3"><div class="cover"><span class="sixIcon">快</span>多仓快发 急速配送</div></div>
+			<div class="col-lg-3 col-xs-3"><div class="cover"><span class="sixIcon">好</span>正品行货 精致服务</div></div>
+			<div class="col-lg-3 col-xs-3"><div class="cover"><span class="sixIcon">省</span>天天低价 畅选无忧</div></div>
+		</div>
+
+		<div class="row mg0">
+			<div class="col-lg-3 col-xs-3 pd0"><div class="mod">
+				<dl class="mod-wrap">
+					<dt>新手指南</dt>
+					<dd><a href="#">新用户注册</a></dd>
+					<dd><a href="#">购买流程</a></dd>
+					<dd><a href="#">用户协议</a></dd>
+				</dl>
+			</div></div>
+			<div class="col-lg-3 col-xs-3 pd0"><div class="mod">
+				<dl class="mod-wrap">
+					<dt>付款配送方式</dt>
+					<dd><a href="#">付款方式</a></dd>
+					<dd><a href="#">常见支付问题</a></dd>
+					<dd><a href="#">配送方式及范围</a></dd>
+					<dd><a href="#">配送常见问题</a></dd>
+				</dl>
+			</div></div>
+			<div class="col-lg-3 col-xs-3 pd0"><div class="mod">
+				<dl class="mod-wrap">
+					<dt>售后服务</dt>
+					<dd><a href="#">退换货流程</a></dd>
+					<dd><a href="#">退换货政策</a></dd>
+				</dl>
+			</div></div>
+			<div class="col-lg-3 col-xs-3 pd0"><div class="mod mod_last">
+				<dl class="mod-wrap">
+					<dt>客服中心</dt>
+					<dd><a href="#">常见问题解答</a></dd>
+					<dd><a href="#">联系客服中心</a></dd>
+					<dd><a href="#">投诉及建议</a></dd>
+				</dl>
+			</div></div>
+		</div>
+     
+
+
+    </div>
+<footer class="blog-footer">
+      <p>中国铁路总公司 | 电话：95306 | 北京市海淀区复兴路10号 | 京ICP备15003716号-1</p>
+      <p>
+        Copyright&copy; 2015 中国铁路信息技术中心 版权所有
+      </p>
+</footer>
+
+	<script src="../js/jquery-1.12.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/jquery.imagezoom.min.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function () {
+        	initReturnTop();
+        	//搜索框的下拉组件，点击事件，显示搜索的类型
+        	$('#searchDropdownType').next().children().click(function(){
+        		$("#searchDropdownType span:first").text($(this).text());
+        	});
+        	
+        	//排序点击事件
+        	$("#J_relative li.sort a.link").click(function(){
+        		if($(this).hasClass('active')){//箭头反转
+        			$(this).children().toggleClass('glyphicon-arrow-down').toggleClass('glyphicon-arrow-up');
+        		}else{//当前排序选中
+        			$("#J_relative li.sort a.active").removeClass('active');
+        			$(this).addClass('active');
+        		}
+        	});
+        });
+
+		/*
+			返回顶部
+		*/
+		function initReturnTop() {
+		    var a = "返回顶部", b = $('<div id="returnTop"></div>').appendTo($("body")).attr("title", a).click(function () {
+		        $("html,body").animate({ scrollTop: 0 }, 120)
+		    }), c = function () {
+		        var a = $(document).scrollTop(), c = $(window).height();
+		        a > 0 ? b.show() : b.hide(), window.XMLHttpRequest || b.css("top", a + c - 166)
+		    };
+		    $(window).bind("scroll", c), $(function () { c() })
+		}
+    </script>
+</body>
+</html>

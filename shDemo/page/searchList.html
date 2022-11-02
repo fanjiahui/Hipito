@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit"><!-- 默认360极速内核 -->
+	<title>商品列表</title>
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/style.css">
+	<!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+      <script src="../js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">您好，欢迎光临95306！</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="#">购物车</a></li>
+            <li><a href="#about">我的最爱</a></li>
+            <li><a href="#contact">我的订单</a></li>
+            <li><a href="#">会员中心</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">快速注册</a></li>
+            <li><a href="#">会员登录</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+	<div class="container">
+	<div class="high190">
+      <div class="navbarbg">
+        <div class="row mg0">
+			<div class="col-lg-3 logo col-xs-3"></div>
+			<div class="col-lg-6 col-xs-6">
+				<div class="searchBarBox">
+					<div class="input-group">
+					  <div class="input-group-btn">
+					    <!-- Button and dropdown menu -->
+					    <button type="button" id="searchDropdownType" class="btn btn-default dropdown-toggle icon_white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    <span>宝贝</span> <span class="caret"></span>
+						  </button>
+						  <ul class="dropdown-menu">
+						    <li><a href="#">宝贝</a></li>
+						    <li><a href="#">店铺</a></li>
+						  </ul>
+					  </div>
+					  <input type="text" class="form-control" placeholder="输入关键字">
+				      <span class="input-group-btn">
+				        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search icon_white" aria-hidden="true"></span></button>
+				      </span>
+					</div>
+						
+				</div>
+			</div>
+			<div class="col-lg-3 telPhn col-xs-3"></div>
+		</div>
+      </div>
+	
+      <div class="row mg0 overflowDefault">
+        <div class="col-lg-3 bgltGren col-xs-3 re">
+          <span class='navTopTitle' id="navTopTitle">95306商品分类<i class="glyphicon glyphicon-menu-down"></i></span>
+          <div class="toggleNav">
+          	<ul>
+          		<li>
+          			<h4 class="iconPhone">手机通讯</h4>
+          			<a href="#">通讯终端</a>
+          			<a href="#">手机配件</a>
+          		</li>
+          		<li>
+          			<h4 class="iconCompu">电脑办公</h4>
+          			<a href="">电脑整机</a>
+          			<a href="">外设配件</a>
+          			<a href="">办公设备</a>
+          		</li>
+          		<li>
+          			<h4 class="iconShuma">数码娱乐</h4>
+          			<a href="">摄影摄像</a>
+          			<a href="">数码配件</a>
+          			<a href="">影音娱乐</a>
+          		</li>
+          		<li>
+          			<h4 class="iconJiaju">家居百货</h4>
+          			<a href="">生活日用</a>
+          			<a href="">床上用品</a>
+          			<a href="">厨卫用具</a>
+          		</li>
+          		<li>
+          			<h4 class="iconJiayo">家用电器</h4>
+          			<a href="">大家电</a>
+          			<a href="">生活家电</a>
+          			<a href="">厨房电器</a>
+          		</li>
+          		<li>
+          			<h4 class="iconBag">箱包配饰</h4>
+          			<a href="">箱包</a>
+          			<a href="">品牌钟表</a>
+          			<a href="">礼品收藏</a>
+          		</li>
+          		<li>
+          			<h4 class="iconMeiro">美容护理</h4>
+          			<a href="">面部护理</a>
+          			<a href="">身体护理</a>
+          			<a href="">彩妆香水</a>
+          		</li>
+          		<li>
+          			<h4 class="iconCar">汽车用品</h4>
+          			<a href="">车内用品</a>
+          			<a href="">清洁养护</a>
+          			<a href="">安全自驾</a>
+          		</li>
+          		<li>
+          			<h4 class="iconToy">玩具母婴</h4>
+          			<a href="">玩具</a>
+          			<a href="">孕产妈咪</a>
+          			<a href="">婴幼用品</a>
+          		</li>
+          		<li>
+          			<h4 class="iconCloth">服饰鞋帽</h4>
+          			<a href="">女装</a>
+          			<a href="">男装</a>
+          			<a href="">内衣/居家</a>
+          			<a href="">配饰</a>
+          		</li>
+          		<li>
+          			<h4 class="iconSport">运动户外</h4>
+          			<a href="">服饰配件</a>
+          			<a href="">运动设备</a>
+          		</li>
+          		<li>
+          			<h4 class="iconFood">食品保健</h4>
+          			<a href="">地方特产</a>
+          			<a href="">饮料冲调</a>
+          			<a href="">保健食品</a>
+          		</li>
+          		<li>
+          			<h4 class="iconTrip">旅游度假</h4>
+          			<a href="">景点门票</a>
+          			<a href="">境外游</a>
+          			<a href="">国内游</a>
+          		</li>
+          		<li>
+          			<h4 class="iconZh">综合服务</h4>
+          			<a href="">劳防用品</a>
+          			<a href="">集团采购</a>
+          			<a href="">员工内购</a>
+          		</li>
+          	</ul>
+          </div>
+        </div>
+
+        <div class="col-lg-9 bgOrge col-xs-9">
+          <ul class="nav navbar-nav navTopLink">
+          	<li><a href="#">首页</a></li>
+          	<li><a href="#">活动专区</a></li>
+          	<li><a href="#">主打商家</a></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+
+      <table class="searchTable table table-bordered">
+      	<tr>
+      		<td class='t-center wd240'>品牌</td>
+      		<td class='re'>
+      			<a href="">路易华菲(LOISHFEI)</a>
+      			<a href="">賓豪(inhao)</a>
+      			<a href="">兰蔻(Lancome)</a>
+      			<a href="">卡帝乐鳄鱼(CARTELO)</a>
+      			<a href="">卡文克莱(CalvinKlein)</a>
+				<span class="search_more">更多</span>
+      		</td>
+      	</tr>
+      	<tr>
+      		<td class='t-center wd240'>店铺</td>
+      		<td>
+      			<a href="">承易购数码官方旗舰店（639）</a>
+      			<a href="">话机世界官方旗舰店（授权专卖）（335）</a>
+      			<a href="">天配数码专营店（293）</a>
+      		</td>
+      	</tr>
+      	<tr>
+      		<td class='t-center wd240'>价格</td>
+      		<td class='m-sortbar re'>
+      			<ul class="dottedBorderRight">
+      				<li>100-200</li>
+      				<li>200-300</li>
+      				<li>300-400</li>
+      				<li>400-500</li>
+      				<li>500-600</li>
+      				<li>600以上</li>
+      			</ul>
+      			<div class="prices">
+				  <div class="inputs J_LaterHover" >
+				    <div class="inner">
+				      <ul class="items g-clearfix">
+				        <li class="item">
+				          <input class="J_SortbarPriceInput input" placeholder="¥" type="text" value="" aria-label="价格最小值">
+				        </li>
+				        <li class="sep">-</li>
+				        <li class="item">
+				          <input class="J_SortbarPriceInput input" placeholder="¥" type="text" value="" aria-label="价格最大值">
+				        </li>
+				        <li class="submit">
+				          <button class="J_SortbarPriceSubmit btn" type="button">确定</button>
+				        </li>
+				      </ul>
+				    </div>
+				  </div>
+				</div>
+				<span class="search_more">更多</span>
+      		</td>
+      	</tr>
+      	<tr id="testCollapse" class="hide">
+      		<td class='t-center wd240'>店铺</td>
+      		<td>
+      			<a href="">承易购数码官方旗舰店（639）</a>
+      			<a href="">话机世界官方旗舰店（授权专卖）（335）</a>
+      			<a href="">天配数码专营店（293）</a>
+      		</td>
+      	</tr>
+      </table>
+		<div id="J_collapse"><span class="collapseBtn">显示更多<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></span></div>
+
+      <div class="row J_sort">
+      	<div class="m-sortbar" id="J_relative">
+ 		 <div class="sort-row">
+	      	<div class="sort-inner">
+					    <ul class="sorts">
+						      <li class="sort">
+						        <a class="J_Ajax link first" title="排序" href="javascript:void(0)">排序</a>
+						      </li>
+						    <li class="sort">
+						        <a class="J_Ajax link" title="综合" href="javascript:void(0)">综合</a>
+						      </li>
+						  
+						      <li class="sort">
+						        <a class="J_Ajax link  " title="销量从高到低" href="javascript:void(0)">销量 <span class="glyphicon glyphicon-arrow-down"></span></a>
+						      </li>
+						    
+						      <li class="sort has-droplist J_LaterHover">
+						      	<a class="J_Ajax link  " title="价格从低到高" href="javascript:void(0)">价格 <span class="glyphicon glyphicon-arrow-down"></span></a>
+						      </li>	 
+						      <li class="sort">
+						        <a class="J_Ajax link  " title="上市时间从高到低" href="javascript:void(0)">上市时间 <span class="glyphicon glyphicon-arrow-down"></span></a>
+						      </li>
+						      <li class="sort">
+						        <a class="J_Ajax link  " title="商品评价从高到低" href="javascript:void(0)">商品评价 <span class="glyphicon glyphicon-list"></span></a>
+						      </li> 
+						</ul>
+					     
+					        
+
+					        <div class="s_pager">
+							  <ul class="items">
+							    
+							      <li class="item">
+							        <a class="link">
+							          <span class="glyphicon glyphicon-menu-left"></span>
+							        </a>
+							      </li>
+							    
+							    <li class="item"><span class="current">1</span>/100</li>
+							      
+							        <li class="item">
+							          <a class="J_Ajax J_Pager link icon-tag" href="#" title="下一页" trace="srp_select_pagedown" data-url="pager" data-key="s" data-value="44">
+							            <span class="glyphicon glyphicon-menu-right"></span>
+							          </a>
+							        </li>
+							      
+							  </ul>
+							</div>
+
+					        <div class="styles">
+							  <ul class="items">
+							    <li class="item">
+							      <a href="javascript:void(0)" class="J_Ajax J_SortbarStyle link" title="列表模式">
+							        <span class="glyphicon glyphicon-th-list"></span>
+							      </a>
+							    </li>
+							    <li class="item">
+							      <a href="javascript:void(0)" class="J_Ajax J_SortbarStyle link active" title="大图模式">
+							        <span class="glyphicon glyphicon-th-large"></span>
+							      </a>
+							    </li>
+							  </ul>
+							</div>
+
+							<div class="location J_LaterHover" id="locationChoose">
+								  <div class="trigger" tabindex="0" role="group" aria-label="发货地区选择">
+								    <div class="inner">
+								      <span class="text" title="">发货地</span>
+								      <span class="glyphicon glyphicon-menu-down"></span>
+								    </div>
+								  </div>
+								  <div class="sections">
+								        
+								      <div class="section">
+								        
+								        <ul class="items clear">
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link align-left" data-url="sortbar" data-key="loc" data-value="%E5%8C%97%E4%BA%AC" trace="seller_location" trace-tracetype="3_北京">北京</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link align-left" data-url="sortbar" data-key="loc" data-value="%E4%B8%8A%E6%B5%B7" trace="seller_location" trace-tracetype="3_上海">上海</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link align-left" data-url="sortbar" data-key="loc" data-value="%E5%B9%BF%E5%B7%9E" trace="seller_location" trace-tracetype="3_广州">广州</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link align-left" data-url="sortbar" data-key="loc" data-value="%E6%B7%B1%E5%9C%B3" trace="seller_location" trace-tracetype="3_深圳">深圳</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link align-left" data-url="sortbar" data-key="loc" data-value="%E6%9D%AD%E5%B7%9E" trace="seller_location" trace-tracetype="3_杭州">杭州</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link align-left" data-url="sortbar" data-key="loc" data-value="%E7%BE%8E%E5%9B%BD%2C%E8%8B%B1%E5%9B%BD%2C%E6%B3%95%E5%9B%BD%2C%E7%91%9E%E5%A3%AB%2C%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A%2C%E6%96%B0%E8%A5%BF%E5%85%B0%2C%E5%8A%A0%E6%8B%BF%E5%A4%A7%2C%E5%A5%A5%E5%9C%B0%E5%88%A9%2C%E9%9F%A9%E5%9B%BD%2C%E6%97%A5%E6%9C%AC%2C%E5%BE%B7%E5%9B%BD%2C%E6%84%8F%E5%A4%A7%E5%88%A9%2C%E8%A5%BF%E7%8F%AD%E7%89%99%2C%E4%BF%84%E7%BD%97%E6%96%AF%2C%E6%B3%B0%E5%9B%BD%2C%E5%8D%B0%E5%BA%A6%2C%E8%8D%B7%E5%85%B0%2C%E6%96%B0%E5%8A%A0%E5%9D%A1%2C%E5%85%B6%E5%AE%83%E5%9B%BD%E5%AE%B6" trace="seller_location" trace-tracetype="3_海外">海外</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E6%B1%9F%E8%8B%8F%2C%E6%B5%99%E6%B1%9F%2C%E4%B8%8A%E6%B5%B7" trace="seller_location" trace-tracetype="3_江浙沪">江浙沪</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E5%B9%BF%E5%B7%9E%2C%E6%B7%B1%E5%9C%B3%2C%E4%B8%AD%E5%B1%B1%2C%E7%8F%A0%E6%B5%B7%2C%E4%BD%9B%E5%B1%B1%2C%E4%B8%9C%E8%8E%9E%2C%E6%83%A0%E5%B7%9E" trace="seller_location" trace-tracetype="3_珠三角">珠三角</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E5%8C%97%E4%BA%AC%2C%E5%A4%A9%E6%B4%A5%2C%E6%B2%B3%E5%8C%97" trace="seller_location" trace-tracetype="3_京津冀">京津冀</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E9%BB%91%E9%BE%99%E6%B1%9F%2C%E5%90%89%E6%9E%97%2C%E8%BE%BD%E5%AE%81" trace="seller_location" trace-tracetype="3_东三省">东三省</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E9%A6%99%E6%B8%AF%2C%E6%BE%B3%E9%97%A8%2C%E5%8F%B0%E6%B9%BE" trace="seller_location" trace-tracetype="3_港澳台">港澳台</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E6%B1%9F%E8%8B%8F%2C%E6%B5%99%E6%B1%9F%2C%E4%B8%8A%E6%B5%B7%2C%E5%AE%89%E5%BE%BD" trace="seller_location" trace-tracetype="3_江浙沪皖">江浙沪皖</a>
+								            </li>
+								          
+								        </ul>
+								      </div>
+								    
+								      <div class="section">
+								        
+								          <div class="hr-line"></div>
+								        
+								        <ul class="items clear">
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E9%95%BF%E6%B2%99" trace="seller_location" trace-tracetype="3_长沙">长沙</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E9%95%BF%E6%98%A5" trace="seller_location" trace-tracetype="3_长春">长春</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E6%88%90%E9%83%BD" trace="seller_location" trace-tracetype="3_成都">成都</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E9%87%8D%E5%BA%86" trace="seller_location" trace-tracetype="3_重庆">重庆</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E5%A4%A7%E8%BF%9E" trace="seller_location" trace-tracetype="3_大连">大连</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E4%B8%9C%E8%8E%9E" trace="seller_location" trace-tracetype="3_东莞">东莞</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E4%BD%9B%E5%B1%B1" trace="seller_location" trace-tracetype="3_佛山">佛山</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E7%A6%8F%E5%B7%9E" trace="seller_location" trace-tracetype="3_福州">福州</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E8%B4%B5%E9%98%B3" trace="seller_location" trace-tracetype="3_贵阳">贵阳</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E5%90%88%E8%82%A5" trace="seller_location" trace-tracetype="3_合肥">合肥</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E9%87%91%E5%8D%8E" trace="seller_location" trace-tracetype="3_金华">金华</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E6%B5%8E%E5%8D%97" trace="seller_location" trace-tracetype="3_济南">济南</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E5%98%89%E5%85%B4" trace="seller_location" trace-tracetype="3_嘉兴">嘉兴</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E6%98%86%E6%98%8E" trace="seller_location" trace-tracetype="3_昆明">昆明</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E5%AE%81%E6%B3%A2" trace="seller_location" trace-tracetype="3_宁波">宁波</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E5%8D%97%E6%98%8C" trace="seller_location" trace-tracetype="3_南昌">南昌</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E5%8D%97%E4%BA%AC" trace="seller_location" trace-tracetype="3_南京">南京</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E9%9D%92%E5%B2%9B" trace="seller_location" trace-tracetype="3_青岛">青岛</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E6%B3%89%E5%B7%9E" trace="seller_location" trace-tracetype="3_泉州">泉州</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E6%B2%88%E9%98%B3" trace="seller_location" trace-tracetype="3_沈阳">沈阳</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E8%8B%8F%E5%B7%9E" trace="seller_location" trace-tracetype="3_苏州">苏州</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E5%A4%A9%E6%B4%A5" trace="seller_location" trace-tracetype="3_天津">天津</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E6%B8%A9%E5%B7%9E" trace="seller_location" trace-tracetype="3_温州">温州</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E6%97%A0%E9%94%A1" trace="seller_location" trace-tracetype="3_无锡">无锡</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E6%AD%A6%E6%B1%89" trace="seller_location" trace-tracetype="3_武汉">武汉</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E8%A5%BF%E5%AE%89" trace="seller_location" trace-tracetype="3_西安">西安</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E5%8E%A6%E9%97%A8" trace="seller_location" trace-tracetype="3_厦门">厦门</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E9%83%91%E5%B7%9E" trace="seller_location" trace-tracetype="3_郑州">郑州</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E4%B8%AD%E5%B1%B1" trace="seller_location" trace-tracetype="3_中山">中山</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E7%9F%B3%E5%AE%B6%E5%BA%84" trace="seller_location" trace-tracetype="3_石家庄">石家庄</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E5%93%88%E5%B0%94%E6%BB%A8" trace="seller_location" trace-tracetype="3_哈尔滨">哈尔滨</a>
+								            </li>
+								          
+								        </ul>
+								      </div>
+								    
+								      <div class="section">
+								        
+								          <div class="hr-line"></div>
+								        
+								        <ul class="items clear">
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E5%AE%89%E5%BE%BD" trace="seller_location" trace-tracetype="3_安徽">安徽</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E7%A6%8F%E5%BB%BA" trace="seller_location" trace-tracetype="3_福建">福建</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E7%94%98%E8%82%83" trace="seller_location" trace-tracetype="3_甘肃">甘肃</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E5%B9%BF%E4%B8%9C" trace="seller_location" trace-tracetype="3_广东">广东</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E5%B9%BF%E8%A5%BF" trace="seller_location" trace-tracetype="3_广西">广西</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E8%B4%B5%E5%B7%9E" trace="seller_location" trace-tracetype="3_贵州">贵州</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E6%B5%B7%E5%8D%97" trace="seller_location" trace-tracetype="3_海南">海南</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E6%B2%B3%E5%8C%97" trace="seller_location" trace-tracetype="3_河北">河北</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E6%B2%B3%E5%8D%97" trace="seller_location" trace-tracetype="3_河南">河南</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E6%B9%96%E5%8C%97" trace="seller_location" trace-tracetype="3_湖北">湖北</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E6%B9%96%E5%8D%97" trace="seller_location" trace-tracetype="3_湖南">湖南</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E6%B1%9F%E8%8B%8F" trace="seller_location" trace-tracetype="3_江苏">江苏</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E6%B1%9F%E8%A5%BF" trace="seller_location" trace-tracetype="3_江西">江西</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E5%90%89%E6%9E%97" trace="seller_location" trace-tracetype="3_吉林">吉林</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E8%BE%BD%E5%AE%81" trace="seller_location" trace-tracetype="3_辽宁">辽宁</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E5%AE%81%E5%A4%8F" trace="seller_location" trace-tracetype="3_宁夏">宁夏</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E9%9D%92%E6%B5%B7" trace="seller_location" trace-tracetype="3_青海">青海</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E5%B1%B1%E4%B8%9C" trace="seller_location" trace-tracetype="3_山东">山东</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E5%B1%B1%E8%A5%BF" trace="seller_location" trace-tracetype="3_山西">山西</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E9%99%95%E8%A5%BF" trace="seller_location" trace-tracetype="3_陕西">陕西</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E4%BA%91%E5%8D%97" trace="seller_location" trace-tracetype="3_云南">云南</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E5%9B%9B%E5%B7%9D" trace="seller_location" trace-tracetype="3_四川">四川</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E8%A5%BF%E8%97%8F" trace="seller_location" trace-tracetype="3_西藏">西藏</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E6%96%B0%E7%96%86" trace="seller_location" trace-tracetype="3_新疆">新疆</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E6%B5%99%E6%B1%9F" trace="seller_location" trace-tracetype="3_浙江">浙江</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E6%BE%B3%E9%97%A8" trace="seller_location" trace-tracetype="3_澳门">澳门</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E9%A6%99%E6%B8%AF" trace="seller_location" trace-tracetype="3_香港">香港</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E5%8F%B0%E6%B9%BE" trace="seller_location" trace-tracetype="3_台湾">台湾</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E5%86%85%E8%92%99%E5%8F%A4" trace="seller_location" trace-tracetype="3_内蒙古">内蒙古</a>
+								            </li>
+								          
+								            <li class="item">
+								              <a href="#" class="J_Ajax link " data-url="sortbar" data-key="loc" data-value="%E9%BB%91%E9%BE%99%E6%B1%9F" trace="seller_location" trace-tracetype="3_黑龙江">黑龙江</a>
+								            </li>
+								          
+								        </ul>
+								      </div>
+								    
+								    
+								  </div>
+								</div>
+
+			</div>
+			</div>
+	      </div>
+      </div>
+
+      <hr class="grayLine" />
+<!-- 商品详情和热门排行 -->
+		<div class="row spMgList" id="searchListBox">
+			<div class="discover-item3">
+				<div class="imgBox"><img src="../img/test/ex01.png" alt=""></div>
+				<div class="item-desc">
+					<h4>宾豪 pc 拉杆箱万向轮旅行箱男女登机箱</h4>
+					<div class="item-comment zhijiang"><em>¥</em><em class="tb-rmb-num">249.00</em></div>
+				</div>
+				<span class="dottSpan">评价: <span>3万</span></span>
+				<span class="dottSpan">已售: <span>3万</span></span>
+				<span class="dottSpan2"><a href="#" class="orgBtn">收藏</a></span>
+				<span class="dottSpan2"><a href="#" class="redLink">购买</a></span>
+				<a href="#" class="shopName">花月箱包专营店</a>
+			</div>
+			<div class="discover-item3">
+				<div class="imgBox"><img src="../img/test/ex01.png" alt=""></div>
+				<div class="item-desc">
+					<h4>宾豪 PC拉杆箱万向轮旅行箱24寸行李箱男女20寸登机旅行箱</h4>
+					<div class="item-comment zhijiang"><em>¥</em><em class="tb-rmb-num">249.00</em></div>
+				</div>
+				<span class="dottSpan">评价: <span>3万</span></span>
+				<span class="dottSpan">已售: <span>3万</span></span>
+				<span class="dottSpan2"><a href="#" class="orgBtn">收藏</a></span>
+				<span class="dottSpan2"><a href="#" class="redLink">购买</a></span>
+				<a href="#" class="shopName">花月箱包专营店</a>
+			</div>
+			<div class="discover-item3">
+				<div class="imgBox"><img src="../img/test/ex01.png" alt=""></div>
+				<div class="item-desc">
+					<h4>宾豪 pc 拉杆箱万向轮旅行箱男女登机箱</h4>
+					<div class="item-comment zhijiang"><em>¥</em><em class="tb-rmb-num">249.00</em></div>
+				</div>
+				<span class="dottSpan">评价: <span>3万</span></span>
+				<span class="dottSpan">已售: <span>3万</span></span>
+				<span class="dottSpan2"><a href="#" class="orgBtn">收藏</a></span>
+				<span class="dottSpan2"><a href="#" class="redLink">购买</a></span>
+				<a href="#" class="shopName">花月箱包专营店</a>
+			</div>
+			<div class="discover-item3">
+				<div class="imgBox"><img src="../img/test/ex01.png" alt=""></div>
+				<div class="item-desc">
+					<h4>宾豪 pc 拉杆箱万向轮旅行箱男女登机箱</h4>
+					<div class="item-comment zhijiang"><em>¥</em><em class="tb-rmb-num">249.00</em></div>
+				</div>
+				<span class="dottSpan">评价: <span>3万</span></span>
+				<span class="dottSpan">已售: <span>3万</span></span>
+				<span class="dottSpan2"><a href="#" class="orgBtn">收藏</a></span>
+				<span class="dottSpan2"><a href="#" class="redLink">购买</a></span>
+				<a href="#" class="shopName">花月箱包专营店</a>
+			</div>
+			<div class="discover-item3">
+				<div class="imgBox"><img src="../img/test/ex01.png" alt=""></div>
+				<div class="item-desc">
+					<h4>宾豪 pc 拉杆箱万向轮旅行箱男女登机箱</h4>
+					<div class="item-comment zhijiang"><em>¥</em><em class="tb-rmb-num">249.00</em></div>
+				</div>
+				<span class="dottSpan">评价: <span>3万</span></span>
+				<span class="dottSpan">已售: <span>3万</span></span>
+				<span class="dottSpan2"><a href="#" class="orgBtn">收藏</a></span>
+				<span class="dottSpan2"><a href="#" class="redLink">购买</a></span>
+				<a href="#" class="shopName">花月箱包专营店</a>
+			</div>
+			<div class="discover-item3">
+				<div class="imgBox"><img src="../img/test/ex01.png" alt=""></div>
+				<div class="item-desc">
+					<h4>宾豪 pc 拉杆箱万向轮旅行箱男女登机箱</h4>
+					<div class="item-comment zhijiang"><em>¥</em><em class="tb-rmb-num">249.00</em></div>
+				</div>
+				<span class="dottSpan">评价: <span>3万</span></span>
+				<span class="dottSpan">已售: <span>3万</span></span>
+				<span class="dottSpan2"><a href="#" class="orgBtn">收藏</a></span>
+				<span class="dottSpan2"><a href="#" class="redLink">购买</a></span>
+				<a href="#" class="shopName">花月箱包专营店</a>
+			</div>
+			<div class="discover-item3">
+				<div class="imgBox"><img src="../img/test/ex01.png" alt=""></div>
+				<div class="item-desc">
+					<h4>宾豪 pc 拉杆箱万向轮旅行箱男女登机箱</h4>
+					<div class="item-comment zhijiang"><em>¥</em><em class="tb-rmb-num">249.00</em></div>
+				</div>
+				<span class="dottSpan">评价: <span>3万</span></span>
+				<span class="dottSpan">已售: <span>3万</span></span>
+				<span class="dottSpan2"><a href="#" class="orgBtn">收藏</a></span>
+				<span class="dottSpan2"><a href="#" class="redLink">购买</a></span>
+				<a href="#" class="shopName">花月箱包专营店</a>
+			</div>
+			<div class="discover-item3">
+				<div class="imgBox"><img src="../img/test/ex01.png" alt=""></div>
+				<div class="item-desc">
+					<h4>宾豪 pc 拉杆箱万向轮旅行箱男女登机箱</h4>
+					<div class="item-comment zhijiang"><em>¥</em><em class="tb-rmb-num">249.00</em></div>
+				</div>
+				<span class="dottSpan">评价: <span>3万</span></span>
+				<span class="dottSpan">已售: <span>3万</span></span>
+				<span class="dottSpan2"><a href="#" class="orgBtn">收藏</a></span>
+				<span class="dottSpan2"><a href="#" class="redLink">购买</a></span>
+				<a href="#" class="shopName">花月箱包专营店</a>
+			</div>
+			<div class="discover-item3">
+				<div class="imgBox"><img src="../img/test/ex01.png" alt=""></div>
+				<div class="item-desc">
+					<h4>宾豪 pc 拉杆箱万向轮旅行箱男女登机箱</h4>
+					<div class="item-comment zhijiang"><em>¥</em><em class="tb-rmb-num">249.00</em></div>
+				</div>
+				<span class="dottSpan">评价: <span>3万</span></span>
+				<span class="dottSpan">已售: <span>3万</span></span>
+				<span class="dottSpan2"><a href="#" class="orgBtn">收藏</a></span>
+				<span class="dottSpan2"><a href="#" class="redLink">购买</a></span>
+				<a href="#" class="shopName">花月箱包专营店</a>
+			</div>
+			<div class="discover-item3">
+				<div class="imgBox"><img src="../img/test/ex01.png" alt=""></div>
+				<div class="item-desc">
+					<h4>宾豪 pc 拉杆箱万向轮旅行箱男女登机箱</h4>
+					<div class="item-comment zhijiang"><em>¥</em><em class="tb-rmb-num">249.00</em></div>
+				</div>
+				<span class="dottSpan">评价: <span>3万</span></span>
+				<span class="dottSpan">已售: <span>3万</span></span>
+				<span class="dottSpan2"><a href="#" class="orgBtn">收藏</a></span>
+				<span class="dottSpan2"><a href="#" class="redLink">购买</a></span>
+				<a href="#" class="shopName">花月箱包专营店</a>
+			</div>
+
+
+		</div>
+
+
+<!-- 多快好省 -->
+		<div class="row bgltGray mg0">
+			<div class="col-lg-3 col-xs-3"><div class="cover"><span class="sixIcon">多</span>品类齐全 轻松购物</div></div>
+			<div class="col-lg-3 col-xs-3"><div class="cover"><span class="sixIcon">快</span>多仓快发 急速配送</div></div>
+			<div class="col-lg-3 col-xs-3"><div class="cover"><span class="sixIcon">好</span>正品行货 精致服务</div></div>
+			<div class="col-lg-3 col-xs-3"><div class="cover"><span class="sixIcon">省</span>天天低价 畅选无忧</div></div>
+		</div>
+
+		<div class="row mg0">
+			<div class="col-lg-3 col-xs-3 pd0"><div class="mod">
+				<dl class="mod-wrap">
+					<dt>新手指南</dt>
+					<dd><a href="#">新用户注册</a></dd>
+					<dd><a href="#">购买流程</a></dd>
+					<dd><a href="#">用户协议</a></dd>
+				</dl>
+			</div></div>
+			<div class="col-lg-3 col-xs-3 pd0"><div class="mod">
+				<dl class="mod-wrap">
+					<dt>付款配送方式</dt>
+					<dd><a href="#">付款方式</a></dd>
+					<dd><a href="#">常见支付问题</a></dd>
+					<dd><a href="#">配送方式及范围</a></dd>
+					<dd><a href="#">配送常见问题</a></dd>
+				</dl>
+			</div></div>
+			<div class="col-lg-3 col-xs-3 pd0"><div class="mod">
+				<dl class="mod-wrap">
+					<dt>售后服务</dt>
+					<dd><a href="#">退换货流程</a></dd>
+					<dd><a href="#">退换货政策</a></dd>
+				</dl>
+			</div></div>
+			<div class="col-lg-3 col-xs-3 pd0"><div class="mod mod_last">
+				<dl class="mod-wrap">
+					<dt>客服中心</dt>
+					<dd><a href="#">常见问题解答</a></dd>
+					<dd><a href="#">联系客服中心</a></dd>
+					<dd><a href="#">投诉及建议</a></dd>
+				</dl>
+			</div></div>
+		</div>
+     
+
+
+    </div>
+<footer class="blog-footer">
+      <p>中国铁路总公司 | 电话：95306 | 北京市海淀区复兴路10号 | 京ICP备15003716号-1</p>
+      <p>
+        Copyright&copy; 2015 中国铁路信息技术中心 版权所有
+      </p>
+</footer>
+
+	<script src="../js/jquery-1.12.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/jquery.imagezoom.min.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function () {
+        	initReturnTop();
+        	//搜索框的下拉组件，点击事件，显示搜索的类型
+        	$('#searchDropdownType').next().children().click(function(){
+        		$("#searchDropdownType span:first").text($(this).text());
+        	});
+        	
+        	//菜单导航点击
+        	$("#navTopTitle").click(function(){
+        		$(this).next().slideToggle('fast');
+        	});
+
+        	//下拉地址选择
+        	$("#locationChoose").mouseenter(function(){$(this).addClass('location-hover');}).mouseleave(function(){$(this).removeClass('location-hover');}).find('a').click(function(){
+        		$("#locationChoose span:first").text($(this).text());//显示选中的文本值
+        		$("#locationChoose").trigger('mouseleave');
+        		//其它操作...
+
+        	});
+
+        	//展开更多
+        	$("#J_collapse").children().click(function(){
+        		$(this).children().toggleClass('glyphicon-menu-down').toggleClass('glyphicon-menu-up');
+        		$("#testCollapse").toggleClass('hide');
+        	});
+
+        	//列表模式或大图模式
+        	$("#J_relative a.J_SortbarStyle").click(function(){
+        		$(this).addClass('active');
+        		if($(this).children().hasClass('glyphicon-th-list')){//如果点击的是 列表模式
+					$(this).parent().next().children().removeClass('active');
+					$("#searchListBox").children().addClass('discover-item4');
+        		}else{
+        			$(this).parent().prev().children().removeClass('active');
+					$("#searchListBox").children().removeClass('discover-item4');
+        		}
+        	});
+
+        	//排序点击事件
+        	$("#J_relative li.sort a.link").click(function(){
+        		if($(this).hasClass('active')){//箭头反转
+        			$(this).children().toggleClass('glyphicon-arrow-down').toggleClass('glyphicon-arrow-up');
+        		}else{//当前排序选中
+        			$("#J_relative li.sort a.active").removeClass('active');
+        			$(this).addClass('active');
+        		}
+        	});
+
+        });
+
+		/*
+			返回顶部
+		*/
+		function initReturnTop() {
+		    var a = "返回顶部", b = $('<div id="returnTop"></div>').appendTo($("body")).attr("title", a).click(function () {
+		        $("html,body").animate({ scrollTop: 0 }, 120)
+		    }), c = function () {
+		        var a = $(document).scrollTop(), c = $(window).height();
+		        a > 0 ? b.show() : b.hide(), window.XMLHttpRequest || b.css("top", a + c - 166)
+		    };
+		    $(window).bind("scroll", c), $(function () { c() })
+		}
+    </script>
+</body>
+</html>

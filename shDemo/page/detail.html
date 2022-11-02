@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit"><!-- 默认360极速内核 -->
+	<title>商品详情</title>
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/style.css">
+	<!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+      <script src="../js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">您好，欢迎光临95306！</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="#">购物车</a></li>
+            <li><a href="#about">我的最爱</a></li>
+            <li><a href="#contact">我的订单</a></li>
+            <li><a href="#">会员中心</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">快速注册</a></li>
+            <li><a href="#">会员登录</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+	<div class="container">
+	<div class="high190">
+      <div class="navbarbg">
+        <div class="row mg0">
+			<div class="col-lg-3 logo col-xs-3"></div>
+			<div class="col-lg-6 col-xs-6">
+				<div class="searchBarBox">
+					<div class="input-group">
+					  <div class="input-group-btn">
+					    <!-- Button and dropdown menu -->
+					    <button type="button" id="searchDropdownType" class="btn btn-default dropdown-toggle icon_white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    <span>宝贝</span> <span class="caret"></span>
+						  </button>
+						  <ul class="dropdown-menu">
+						    <li><a href="#">宝贝</a></li>
+						    <li><a href="#">店铺</a></li>
+						  </ul>
+					  </div>
+					  <input type="text" class="form-control" placeholder="输入关键字">
+				      <span class="input-group-btn">
+				        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search icon_white" aria-hidden="true"></span></button>
+				      </span>
+					</div>
+						
+				</div>
+			</div>
+			<div class="col-lg-3 telPhn col-xs-3"></div>
+		</div>
+      </div>
+	
+      <div class="row mg0">
+        <div class="col-lg-4 bgltGren col-xs-4">
+          <span class='navTopTitle'>95306商品分类</span>
+        </div>
+
+        <div class="col-lg-8 bgOrge col-xs-8">
+          <ul class="nav navbar-nav navTopLink">
+          	<li><a href="#">首页</a></li>
+          	<li><a href="#">活动专区</a></li>
+          	<li><a href="#">主打商家</a></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+<!-- 面包屑 -->
+		<ol class="breadcrumb breadsize">
+		  <li><a href="#">男装/运动户外</a></li>
+		  <li><a href="#">上装</a></li>
+		  <li class="active">西服</li>
+		</ol>
+
+      <div class="row mg0 detail-meta">
+      	<div class="col-lg-4 pdR10 col-xs-4">
+      		<!-- 商品图片放大模块 -->
+			<div class="box"> 
+		        <div class="tb-booth tb-pic tb-s310"> 
+		            <a href="javascript:void(0)"> 
+		                <img src="../img/test/ex01_mid.jpg" rel="../img/test/ex01.jpg" class="jqzoom" /></a> 
+		        </div> 
+		        <ul class="tb-thumb" id="thumblist"> 
+		            <li class="tb-selected"> 
+		                <div class="tb-pic tb-s40"> 
+		                    <a href="javascript:void(0)"> 
+		                        <img src="../img/test/ex01.png" mid="../img/test/ex01_mid.jpg" big="../img/test/ex01.jpg"></a></div> 
+		            </li> 
+		            <li> 
+		                <div class="tb-pic tb-s40"> 
+		                    <a href="javascript:void(0)"> 
+		                        <img src="../img/test/02_small.jpg" mid="../img/test/02_mid.jpg" big="../img/test/02.jpg"></a></div> 
+		            </li> 
+		            <li> 
+		                <div class="tb-pic tb-s40"> 
+		                    <a href="javascript:void(0)"> 
+		                        <img src="../img/test/ex01.png" mid="../img/test/ex01_mid.jpg" big="../img/test/ex01.jpg"></a></div> 
+		            </li> 
+		            <li> 
+		                <div class="tb-pic tb-s40"> 
+		                    <a href="javascript:void(0)"> 
+		                       <img src="../img/test/ex02.png" mid="../img/test/ex02.png" big="../img/test/ex02.png"></a></div> 
+		            </li> 
+		           
+		        </ul> 
+		    </div>
+
+      	</div>
+      	<div class="col-lg-8 re col-xs-8">
+      		<h3 class="tb-detail-hd">宾豪pc拉杆箱万向轮旅行箱</h3>
+      		<ul class="tb-meta">
+      			<li class="clear">
+      				<span class="tb-property-type">市&ensp;场&ensp;价</span>
+      				<div>
+      					<strong id="J_StrPrice"><em class="tb-rmb">¥</em><em class="tb-rmb-num">189.00</em></strong>
+      				</div>
+      			</li>
+      			<li class="clear">
+      				<span class="tb-property-type">商城售价</span>
+      				<div>
+      					<strong class="tb-promo-price"><em class="tb-rmb">¥</em><em id="J_PromoPriceNum" class="tb-rmb-num hasSpPrice">68.04</em></strong>
+      				</div>
+      			</li>
+      		</ul>
+      		<div class="tb-key">
+				<div class="tb-skin">
+		    		<div class="tb-sku">
+		    			<dl class="tb-amount clear">
+							<dt class="tb-metatit">编&emsp;&emsp;号</dt>
+							<dd>
+								<span>E123456789</span>
+							</dd>
+						</dl>
+	                	<dl class="tm-delivery-panel" id="J_RSPostageCont"><dt class="tb-metatit">配&emsp;&emsp;送</dt><dd>
+				            <div class="tb-postAge">
+				            	<span class="tb-deliveryAdd" id="J_deliveryAdd">浙江金华</span> 至
+				                <span id="J_AddrSelectTrigger" class="mui_addr_tri">
+				                	<span class="mui_addr_tri_1"><span>上海</span><span class="glyphicon glyphicon-triangle-bottom"></span></span>
+									<div id="ks-component" class="mui_addr_sup">
+
+									<div id="ks-content-ks-component" class="ks-overlay-content"><div class="clearfix"><b class="mui_addr_Close">关闭</b><ul class="mui_addr_list mui_addr_zxCity clearfix"><li><a href="#" id="J_2204_110100" class="" code="110100">北京<s></s></a></li><li><a href="#" id="J_2204_120100" class="" code="120100">天津<s></s></a></li><li><a href="#" id="J_2204_310100" class="mui_addr_selected" code="310100">上海<s></s></a></li><li><a href="#" id="J_2204_500100" class="" code="500100">重庆<s></s></a></li></ul><ul class="mui_addr_list  clearfix"><li><a href="#" id="J_2204_130000" class="" code="130000">河北<s></s></a></li><li><a href="#" id="J_2204_140000" class="" code="140000">山西<s></s></a></li><li><a href="#" id="J_2204_150000" class="" code="150000">内蒙古<s></s></a></li><li><a href="#" id="J_2204_210000" class="" code="210000">辽宁<s></s></a></li><li><a href="#" id="J_2204_220000" class="" code="220000">吉林<s></s></a></li><li><a href="#" id="J_2204_230000" class="" code="230000">黑龙江<s></s></a></li><li class="mui_addr_Sup2box"></li><li><a href="#" id="J_2204_320000" class="" code="320000">江苏<s></s></a></li><li><a href="#" id="J_2204_330000" class="" code="330000">浙江<s></s></a></li><li><a href="#" id="J_2204_340000" class="" code="340000">安徽<s></s></a></li><li><a href="#" id="J_2204_350000" class="" code="350000">福建<s></s></a></li><li><a href="#" id="J_2204_360000" class="" code="360000">江西<s></s></a></li><li><a href="#" id="J_2204_370000" class="" code="370000">山东<s></s></a></li><li class="mui_addr_Sup2box"></li><li><a href="#" id="J_2204_410000" class="" code="410000">河南<s></s></a></li><li><a href="#" id="J_2204_420000" class="" code="420000">湖北<s></s></a></li><li><a href="#" id="J_2204_430000" class="" code="430000">湖南<s></s></a></li><li><a href="#" id="J_2204_440000" class="" code="440000">广东<s></s></a></li><li><a href="#" id="J_2204_450000" class="" code="450000">广西<s></s></a></li><li><a href="#" id="J_2204_460000" class="" code="460000">海南<s></s></a></li><li class="mui_addr_Sup2box"></li><li><a href="#" id="J_2204_510000" class="" code="510000">四川<s></s></a></li><li><a href="#" id="J_2204_520000" class="" code="520000">贵州<s></s></a></li><li><a href="#" id="J_2204_530000" class="" code="530000">云南<s></s></a></li><li><a href="#" id="J_2204_540000" class="" code="540000">西藏<s></s></a></li><li><a href="#" id="J_2204_610000" class="" code="610000">陕西<s></s></a></li><li><a href="#" id="J_2204_620000" class="" code="620000">甘肃<s></s></a></li><li class="mui_addr_Sup2box"></li><li><a href="#" id="J_2204_630000" class="" code="630000">青海<s></s></a></li><li><a href="#" id="J_2204_640000" class="" code="640000">宁夏<s></s></a></li><li><a href="#" id="J_2204_650000" class="" code="650000">新疆<s></s></a></li><li><a href="#" id="J_2204_710000" class="" code="710000">台湾<s></s></a></li><li><a href="#" id="J_2204_810000" class="" code="810000">香港<s></s></a></li><li><a href="#" id="J_2204_820000" class="" code="820000">澳门<s></s></a></li><li class="mui_addr_Sup2box"></li><li><a href="#" id="J_2204_990000" class="" code="990000">海外<s></s></a></li><li class="mui_addr_Sup2box"></li></ul></div></div></div>
+				                </span>
+				                <div id="J_PostageToggleCont" class="tb-postAge-info"><p><span>快递: 0.00 </span></p></div>
+							</div>
+	                    </dd></dl>
+						<dl class="tb-prop tm-sale-prop clear tm-img-prop ">
+							<dt class="tb-metatit">颜色分类</dt>
+							<dd>
+								<ul class="J_TSaleProp tb-img">
+									<li title="紫2+浅蓝1+黑1+粉1">
+										<a href="#" style="background:url(https://img.alicdn.com/bao/uploaded/i1/272715291/TB2BdookXXXXXcmXXXXXXXXXXXX_!!272715291.jpg_30x30.jpg) center no-repeat;">
+											<span>紫2+浅蓝1+黑1+粉1</span>
+										</a>
+									</li>
+									<li title="紫2+浅蓝1+黑1+粉1">
+										<a href="#" style="background:url(https://img.alicdn.com/bao/uploaded/i1/272715291/TB2BdookXXXXXcmXXXXXXXXXXXX_!!272715291.jpg_30x30.jpg) center no-repeat;">
+											<span>紫2+浅蓝1+黑1+粉1</span>
+										</a>
+									</li>
+									<li title="紫2+浅蓝1+黑1+粉1">
+										<a href="#" style="background:url(https://img.alicdn.com/bao/uploaded/i1/272715291/TB2BdookXXXXXcmXXXXXXXXXXXX_!!272715291.jpg_30x30.jpg) center no-repeat;">
+											<span>紫2+浅蓝1+黑1+粉1</span>
+										</a>
+									</li>
+									<li title="紫2+浅蓝1+黑1+粉1">
+										<a href="#" style="background:url(https://img.alicdn.com/bao/uploaded/i1/272715291/TB2BdookXXXXXcmXXXXXXXXXXXX_!!272715291.jpg_30x30.jpg) center no-repeat;">
+											<span>紫2+浅蓝1+黑1+粉1</span>
+										</a>
+									</li>
+								</ul>
+							</dd>
+						  </dl>
+						<dl class="tb-amount clear">
+							<dt class="tb-metatit">数&emsp;&emsp;量</dt>
+							<dd id="J_Amount"><span class="tb-amount-widget mui-amount-wrap">
+									<input type="text" id="mueinput" class="tb-text mui-amount-input" value="1" maxlength="8" title="请输入购买量"  onkeyup="this.value=this.value.replace(/\D/g,'')"  onafterpaste="this.value=this.value.replace(/\D/g,'')" />
+									<span class="mui-amount-btn">
+						                <span class="mui-amount-increase glyphicon glyphicon-menu-up" id="btn_add"></span>
+						                <span class="mui-amount-decrease glyphicon glyphicon-menu-down" id="btn_rem"></span>
+									</span>
+									<span class="mui-amount-unit">件</span>
+								</span>
+								<em id="J_EmStock">库存13918件</em>
+							</dd>
+						</dl>    			
+						<div class="dotLine"></div>
+		        		<div class="tb-action tm-clear">
+		        			<button type="button" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;加入购物车</button>
+		        			<button type="button" class="btn btn-danger btn-lg">立即购买</button>
+		        			<button type="button" class="btn btn-lgtGreen btn-lg">加到我的最爱</button>
+		    			</div>
+		        	</div>
+		        </div>
+			</div>
+			<div id="ald-skuRight" class="row mg0">
+				<img src="../img/test/ex02.png" alt="" />
+				<div class="col-xs-12 gray1"><a href="#">TS01-总公司Mor商家1</a></div>
+				<div class="col-xs-6 gray2"><a href="#">进入店铺</a></div>
+				<div class="col-xs-6 gray2"><a href="#">关注店铺</a></div>
+			</div>
+      	</div>
+      </div>
+
+      <hr class="grayLine" />
+<!-- 商品详情和热门排行 -->
+		<div class="row mg0">
+			<div class="col-lg-3 pdR10 col-xs-3">
+				<div class="easyBox">
+					<h4 class="grayTitle">热门排行</h4>
+					<ul class="nav nav-tabs sortGood" role="tablist">
+					    <li role="presentation" class="active"><a href="#tb1" role="tab" data-toggle="tab">销售量</a></li>
+					    <li role="presentation"><a href="#tb2" role="tab" data-toggle="tab">浏览数</a></li>
+					  </ul>
+
+					  <!-- Tab panes -->
+					  <div class="tab-content">
+					    <div role="tabpanel" class="tab-pane active" id="tb1">
+					    	<!-- 第一个标签页内容 -->
+
+					    	<div class="discover-item">
+							    <a href="#" title="日本代购  城野医生毛孔收缩水 化妆水爽肤水 收毛孔100ml">
+							        <img src="https:/gw.alicdn.com/tps/i1/111044389/TB27lmGjVXXXXXiXpXXXXXXXXXX_!!111044389.jpg_150x150.jpg_.webp">
+							        <div class="item-desc">
+							            <h4>日本代购  城野医生毛孔收缩水 化妆水爽肤水 收毛孔100ml</h4>
+							            <div class="item-comment"><em class="tb-rmb">¥</em><em class="tb-rmb-num">189.00</em></div>
+							            <div class="item-sell-count">已售<span>801</span>件</div>
+							        </div>
+							    </a>
+							</div>
+							<div class="discover-item">
+							    <a href="#" title="日本代购  城野医生毛孔收缩水 化妆水爽肤水 收毛孔100ml">
+							        <img src="https:/gw.alicdn.com/tps/i1/111044389/TB27lmGjVXXXXXiXpXXXXXXXXXX_!!111044389.jpg_150x150.jpg_.webp">
+							        <div class="item-desc">
+							            <h4>日本代购  城野医生毛孔收缩水 化妆水爽肤水 收毛孔100ml</h4>
+							            <div class="item-comment"><em class="tb-rmb">¥</em><em class="tb-rmb-num">189.00</em></div>
+							            <div class="item-sell-count">已售<span>801</span>件</div>
+							        </div>
+							    </a>
+							</div>
+							<div class="discover-item">
+							    <a href="#" title="日本代购  城野医生毛孔收缩水 化妆水爽肤水 收毛孔100ml">
+							        <img src="https:/gw.alicdn.com/tps/i1/111044389/TB27lmGjVXXXXXiXpXXXXXXXXXX_!!111044389.jpg_150x150.jpg_.webp">
+							        <div class="item-desc">
+							            <h4>日本代购  城野医生毛孔收缩水 化妆水爽肤水 收毛孔100ml</h4>
+							            <div class="item-comment"><em class="tb-rmb">¥</em><em class="tb-rmb-num">189.00</em></div>
+							            <div class="item-sell-count">已售<span>801</span>件</div>
+							        </div>
+							    </a>
+							</div>
+							<div class="discover-item">
+							    <a href="#" title="日本代购  城野医生毛孔收缩水 化妆水爽肤水 收毛孔100ml">
+							        <img src="https:/gw.alicdn.com/tps/i1/111044389/TB27lmGjVXXXXXiXpXXXXXXXXXX_!!111044389.jpg_150x150.jpg_.webp">
+							        <div class="item-desc">
+							            <h4>日本代购  城野医生毛孔收缩水 化妆水爽肤水 收毛孔100ml</h4>
+							            <div class="item-comment"><em class="tb-rmb">¥</em><em class="tb-rmb-num">189.00</em></div>
+							            <div class="item-sell-count">已售<span>801</span>件</div>
+							        </div>
+							    </a>
+							</div>
+							<div class="discover-item">
+							    <a href="#" title="日本代购  城野医生毛孔收缩水 化妆水爽肤水 收毛孔100ml">
+							        <img src="https:/gw.alicdn.com/tps/i1/111044389/TB27lmGjVXXXXXiXpXXXXXXXXXX_!!111044389.jpg_150x150.jpg_.webp">
+							        <div class="item-desc">
+							            <h4>日本代购  城野医生毛孔收缩水 化妆水爽肤水 收毛孔100ml</h4>
+							            <div class="item-comment"><em class="tb-rmb">¥</em><em class="tb-rmb-num">189.00</em></div>
+							            <div class="item-sell-count">已售<span>801</span>件</div>
+							        </div>
+							    </a>
+							</div>
+							<div><a href="#" class="seeMoreGoods">查看更多宝贝<span class="arrowRight"></span></a></div>
+					    </div>
+					    <div role="tabpanel" class="tab-pane" id="tb2">...第二个标签内容。。。</div>
+					  </div>
+				</div>
+<!-- 相关商品推荐 -->
+				<div class="easyBox">
+					<h4 class="grayTitle">相关商品推荐</h4>
+					<div class="discover-item2">
+						<a href="#">
+							<div class='imgBox'><img src="../img/test/ex01.png" alt="" /></div>
+							<div class="item-desc">
+								<h4>宾豪 pc 拉杆箱万向轮旅行箱男女登机箱</h4>
+								<div class="item-comment"><em>¥</em><em class="tb-rmb-num">249</em></div>
+							</div>
+						</a>
+					</div>
+					<div class="discover-item2">
+						<a href="#">
+							<div class='imgBox'><img src="../img/test/ex01.png" alt="" /></div>
+							<div class="item-desc">
+								<h4>宾豪 pc 拉杆箱万向轮旅行箱男女登机箱</h4>
+								<div class="item-comment"><em>¥</em><em class="tb-rmb-num">249</em></div>
+							</div>
+						</a>
+					</div>
+					<div class="discover-item2">
+						<a href="#">
+							<div class='imgBox'><img src="../img/test/ex01.png" alt="" /></div>
+							<div class="item-desc">
+								<h4>宾豪 pc 拉杆箱万向轮旅行箱男女登机箱</h4>
+								<div class="item-comment"><em>¥</em><em class="tb-rmb-num">249</em></div>
+							</div>
+						</a>
+					</div>
+
+				</div>
+			</div>
+			<div class="col-lg-9 pdL10 col-xs-9">
+				<div class="easyBox">
+					<ul class="nav nav-tabs detailTab">
+					  <li role="presentation" class="active"><a href="#detailTb1" role="tab" data-toggle="tab">商品详情</a></li>
+					  <li role="presentation"><a href="#detailTb2" role="tab" data-toggle="tab">商品参数</a></li>
+					  <li role="presentation"><a href="#detailTb3" role="tab" data-toggle="tab">成交记录</a></li>
+					  <li role="presentation"><a href="#detailTb4" role="tab" data-toggle="tab">售后保障</a></li>
+					</ul>
+					<!-- Tab panes -->
+					<div class="tab-content">
+					    <div role="tabpanel" class="tab-pane fade in active" id="detailTb1">
+							<!-- 商品详情 图片-->
+							<img src="../img/test/ex01.jpg" alt="" />
+							<img src="../img/test/ex01.jpg" alt="" />
+					    </div>
+						<div role="tabpanel" class="tab-pane fade" id="detailTb2">..2.</div>
+						<div role="tabpanel" class="tab-pane fade" id="detailTb3">..3.</div>
+						<div role="tabpanel" class="tab-pane fade" id="detailTb4">..4.</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+    </div>
+
+
+	<script src="../js/jquery-1.12.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/jquery.imagezoom.min.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function () {
+        	initReturnTop();
+        	//搜索框的下拉组件，点击事件，显示搜索的类型
+        	$('#searchDropdownType').next().children().click(function(){
+        		$("#searchDropdownType span:first").text($(this).text());
+        	});
+        	//商品图查看大图
+            $(".jqzoom").imagezoom({xzoom:380,yzoom:380});
+
+            $("#thumblist li a").click(function () {
+                $(this).parents("li").addClass("tb-selected").siblings().removeClass("tb-selected");
+                $(".jqzoom").attr('src', $(this).find("img").attr("mid"));//中等大小的图片
+                $(".jqzoom").attr('rel', $(this).find("img").attr("big"));//查看放大的图片
+            });
+
+
+            //配送地址，点击出现下拉选择
+            $('#J_AddrSelectTrigger').click(function(){
+            	$("#ks-component").toggle();
+            });
+            //配送地址弹窗关闭事件
+            $("#ks-content-ks-component b.mui_addr_Close").click(function(){
+            	$("#ks-component").hide();
+            });
+            //用户选择了城市地址
+            $("#ks-content-ks-component li").click(function(){
+            	$("#J_AddrSelectTrigger span:first").children().first().text($(this).text());
+            	$("#ks-component").hide();
+            	return false;
+            });
+
+            //加一减一操作
+            $('#btn_rem').on('click', function () {
+		        var $view = $("#mueinput");
+		        if (parseInt($view.val())<2) {
+		        	$view.val(1);
+		            return false;
+		        } else {
+		            var a = +$view.val() - 1;
+		            $view.val(a);
+		        }
+		    });
+		    $('#btn_add').on('click', function () {
+		        var $view = $("#mueinput");
+		        
+	            var a = +$view.val() + 1;
+	            $view.val(a);
+		        
+		    });
+        });
+
+		/*
+			返回顶部
+		*/
+		function initReturnTop() {
+		    var a = "返回顶部", b = $('<div id="returnTop"></div>').appendTo($("body")).attr("title", a).click(function () {
+		        $("html,body").animate({ scrollTop: 0 }, 120)
+		    }), c = function () {
+		        var a = $(document).scrollTop(), c = $(window).height();
+		        a > 0 ? b.show() : b.hide(), window.XMLHttpRequest || b.css("top", a + c - 166)
+		    };
+		    $(window).bind("scroll", c), $(function () { c() })
+		}
+    </script>
+</body>
+</html>
