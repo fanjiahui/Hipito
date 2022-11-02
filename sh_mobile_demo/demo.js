@@ -1,0 +1,20 @@
+{"data":[
+		{"waybillSN":"HG66880001684","goodsName":"摩卡咖啡","goodsType":"饮品","consignee":"华佗","consiPhone":"12345678912","goodsPrice":"50","warehouse":"仁川仓库","tariff":"30","shipping":"28","handlefee":"5.7"},
+		{"waybillSN":"HG66880001686","goodsName":"摩卡咖啡","goodsType":"饮品","consignee":"张飞","consiPhone":"12345678912","goodsPrice":"50","warehouse":"仁川仓库","tariff":"30","shipping":"28","handlefee":"5.7"},
+		{"waybillSN":"HG66880001688","goodsName":"摩卡咖啡摩卡咖啡摩卡咖啡摩卡咖啡","goodsType":"饮品","consignee":"孙权","consiPhone":"12345678912","goodsPrice":"50","warehouse":"仁川仓库","tariff":"30","shipping":"28","handlefee":"5.7"},
+		{"waybillSN":"HG66880001688","goodsName":"摩卡咖啡摩卡咖啡摩卡咖啡摩卡咖啡","goodsType":"饮品","consignee":"刘备","consiPhone":"12345678912","goodsPrice":"50","warehouse":"仁川仓库","tariff":"30","shipping":"28","handlefee":"5.7"},
+		{"waybillSN":"HG66880001688","goodsName":"摩卡咖啡摩卡咖啡摩卡咖啡摩卡咖啡","goodsType":"饮品","consignee":"曹操","consiPhone":"12345678912","goodsPrice":"50","warehouse":"仁川仓库","tariff":"30","shipping":"28","handlefee":"5.7"},
+		{"waybillSN":"HG66880001688","goodsName":"摩卡咖啡摩卡咖啡摩卡咖啡摩卡咖啡","goodsType":"饮品","consignee":"大乔","consiPhone":"12345678912","goodsPrice":"50","warehouse":"大阪仓库","tariff":"30","shipping":"28","handlefee":"5.7"},
+		{"waybillSN":"HG66880001688","goodsName":"摩卡咖啡摩卡咖啡摩卡咖啡摩卡咖啡","goodsType":"饮品","consignee":"小乔","consiPhone":"12345678912","goodsPrice":"50","warehouse":"仁川仓库","tariff":"30","shipping":"28","handlefee":"5.7"},
+		{"waybillSN":"HG66880001688","goodsName":"摩卡咖啡摩卡咖啡摩卡咖啡摩卡咖啡","goodsType":"饮品","consignee":"孙尚香","consiPhone":"12345678912","goodsPrice":"50","warehouse":"大阪仓库","tariff":"30","shipping":"28","handlefee":"5.7"},
+		{"waybillSN":"HG66880001688","goodsName":"摩卡咖啡摩卡咖啡摩卡咖啡摩卡咖啡","goodsType":"饮品","consignee":"黄志英","consiPhone":"12345678912","goodsPrice":"50","warehouse":"仁川仓库","tariff":"30","shipping":"28","handlefee":"5.7"},
+		{"waybillSN":"HG66880001688","goodsName":"摩卡咖啡摩卡咖啡摩卡咖啡摩卡咖啡","goodsType":"饮品","consignee":"诸葛亮","consiPhone":"12345678912","goodsPrice":"50","warehouse":"仁川仓库","tariff":"30","shipping":"28","handlefee":"5.7"},
+		{"waybillSN":"HG66880001688","goodsName":"摩卡咖啡摩卡咖啡摩卡咖啡摩卡咖啡","goodsType":"饮品","consignee":"张辽","consiPhone":"12345678912","goodsPrice":"50","warehouse":"仁川仓库","tariff":"30","shipping":"28","handlefee":"5.7"},
+		{"waybillSN":"HG66880001688","goodsName":"摩卡咖啡摩卡咖啡摩卡咖啡摩卡咖啡","goodsType":"饮品","consignee":"张三","consiPhone":"12345678912","goodsPrice":"50","warehouse":"大阪仓库","tariff":"30","shipping":"28","handlefee":"5.7"},
+		{"waybillSN":"HG66880001688","goodsName":"摩卡咖啡摩卡咖啡摩卡咖啡摩卡咖啡","goodsType":"饮品","consignee":"张三","consiPhone":"12345678912","goodsPrice":"50","warehouse":"仁川仓库","tariff":"30","shipping":"28","handlefee":"5.7"},
+		{"waybillSN":"HG66880001688","goodsName":"摩卡咖啡摩卡咖啡摩卡咖啡摩卡咖啡","goodsType":"饮品","consignee":"张三","consiPhone":"12345678912","goodsPrice":"50","warehouse":"仁川仓库","tariff":"30","shipping":"28","handlefee":"5.7"},
+		{"waybillSN":"HG66880001688","goodsName":"摩卡咖啡摩卡咖啡摩卡咖啡摩卡咖啡","goodsType":"饮品","consignee":"张三","consiPhone":"12345678912","goodsPrice":"50","warehouse":"大阪仓库","tariff":"30","shipping":"28","handlefee":"5.7"},
+		{"waybillSN":"HG66880001688","goodsName":"摩卡咖啡摩卡咖啡摩卡咖啡摩卡咖啡","goodsType":"饮品","consignee":"张三","consiPhone":"12345678912","goodsPrice":"50","warehouse":"大阪仓库","tariff":"30","shipping":"28","handlefee":"5.7"},
+		{"waybillSN":"HG66880001688","goodsName":"摩卡咖啡摩卡咖啡摩卡咖啡摩卡咖啡","goodsType":"饮品","consignee":"张三","consiPhone":"12345678912","goodsPrice":"50","warehouse":"大阪仓库","tariff":"30","shipping":"28","handlefee":"5.7"},
+		{"waybillSN":"HG66880001688","goodsName":"摩卡咖啡摩卡咖啡摩卡咖啡摩卡咖啡","goodsType":"饮品","consignee":"张三","consiPhone":"12345678912","goodsPrice":"50","warehouse":"大阪仓库","tariff":"30","shipping":"28","handlefee":"5.7"}
+		]}

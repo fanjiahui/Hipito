@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+        <title>进外宝移动端APP</title>
+        <style type="text/css">
+		/*共用样式  S*/
+        html, body {
+        	font-size:40px;
+		    margin: 0;
+		    padding: 0;font-family: "microsoft yahei";
+		}
+        #superContainer {
+		    height: 100%;
+		    position: relative;
+		}
+		.slogan{
+			text-indent: -9999px;
+			width:4.8rem;
+			height:3.95rem;
+			position:absolute;
+			top:6%;
+			left:30px;
+			background:url(images/sec1-slogan.png) no-repeat;
+			background-size: 4.8rem 3.95rem;
+			margin:0;
+		}
+		.logo{
+			text-indent: -9999px;
+			width:7.5rem;
+			height:3rem;
+			position:fixed;
+			top:-10px;
+			left:0px;
+			background:url(images/logo.png) no-repeat;
+			background-size: 7.5rem 3rem;
+			z-index:100;
+		}
+		.con{
+			height:100%;
+			position: relative;
+		}
+		.arrow{
+			width:1.9rem;
+			height:1.875rem;
+			position: fixed;
+			bottom:2%;
+			left:50%;
+			margin-left: -0.9375rem;
+			background:url(images/arrow.png) no-repeat;
+			background-size: 1.9rem 1.875rem;
+			z-index:100;
+		}
+		.arrow.start{
+			
+			-webkit-animation: start 2s ease-in-out infinite;
+			animation: start 2s ease-in-out infinite;
+		}
+		@keyframes start{
+			0%{
+				opacity:1;
+				transform: translateY(0px);
+			}
+			100%{
+				opacity:0;
+				transform: translateY(-20px);
+			}
+		}
+		@-webkit-keyframes start{
+			0%{
+				opacity:1;
+				-webkit-transform: translateY(0px);
+			}
+			100%{
+				opacity:0;
+				-webkit-transform: translateY(-20px);
+			}
+		}
+		/*共用样式  E*/
+		
+	#section1{background:#ff465d;position:relative;}
+		#sec_1,#sec_2,#sec_3{
+			width:9.975rem;
+			height:9.975rem;
+			position: absolute;
+			top:50%;
+			left:50%;
+			-webkit-transform: translate(-50%, -70%);
+			transform: translate(-50%, -70%);
+			background:url(images/sec1-bg1.png) no-repeat center;
+			
+		}
+		#sec_1{border-radius:50%;}
+		#sec_2{
+			z-index:5;
+			-webkit-transform: translate(-51%, -76%);
+			transform: translate(-51%, -76%);
+			background:url(images/sec1-bg2.png) no-repeat;
+			-webkit-background-size: 9.975rem;
+			background-size: 9.975rem;
+		}
+		#sec_3{
+			z-index:10;
+			-webkit-transform: translate(-20%, -46%);
+			transform: translate(-20%, -46%);
+			background:url(images/sec1-bg3.png) no-repeat;
+			-webkit-background-size:  9.975rem 9.975rem;
+			background-size: 9.975rem 9.975rem;
+		}
+		.bottom_txt{
+			position:absolute;
+			bottom:105px;
+			left:50%;
+			margin-left:-2.775rem;
+			width:5.55rem;
+			height:3.3rem;
+			background:url(images/sec1-txt.png) no-repeat;
+			background-size: 5.55rem 3.3rem;
+		}
+		
+		.fade{-webkit-animation: fade 2.5s ease-in-out; animation: fade 2.5s ease-in-out;}
+		@-webkit-keyframes fade{
+			0%{
+				background-size: 0;
+				opacity: 0;
+			}
+			100%{
+				background-size: 9.975rem;
+				opacity: 1;
+			}
+		}
+		.fromLeft{ -webkit-animation: fromLeft .5s ease-in-out; animation: fromLeft .5s ease-in-out;}
+		@-webkit-keyframes fromLeft{
+			0%{ -webkit-transform: translate(-150%,-76%); }
+			100%{ -webkit-transform: translate(-51%, -76%); }
+		}
+		@keyframes fromLeft{
+			0%{ transform: translate(-150%,-76%);}
+			100%{ transform: translate(-51%, -76%);}
+		}
+		.fromRight{ -webkit-animation: fromRight 1.5s ease-in-out; animation: fromRight 1.5s ease-in-out;}
+		@-webkit-keyframes fromRight{
+			0%{ -webkit-transform: translate(150%,-46%); }
+			50%{ -webkit-transform: translate(-30%,-46%); }
+			100%{ -webkit-transform: translate(-20%, -46%); }
+		}
+		@keyframes fromRight{
+			0%{ transform: translate(150%,-46%); }
+			50%{ transform: translate(-30%,-46%); }
+			100%{ transform: translate(-20%, -46%); }
+		}
+		.fromBottom{ -webkit-animation: fromBottom 1.5s ease-in-out; animation: fromBottom 1.5s ease-in-out;}
+		@-webkit-keyframes fromBottom{
+			0%{ -webkit-transform: translateY(105px);opacity: 0 }
+			100%{ -webkit-transform: translateY(0);opacity: 1; }
+		}
+		@keyframes fromBottom{
+			0%{ transform: translateY(105px);opacity: 0;}
+			100%{ transform: translateY(0);opacity: 1;}
+		}
+
+	#section2{background:#ffc32e;position: relative;}
+		#section2 .slogan{background-image:url(images/sec2-slogan.png);}
+		#section2 .bottom_txt{background-image:url(images/sec2-txt.png);bottom:80px;}
+		#sec2_1{
+			width:11.2rem;
+			height:15.75rem;
+			position: absolute;
+			top:50%;
+			left:50%;
+			margin-left:-5.6rem;
+			margin-top:-7.875rem;
+			background:url(images/sec2-bg1.png) no-repeat;
+			-webkit-background-size: 11.2rem 15.75rem;
+			background-size: 11.2rem 15.75rem;
+			transform-origin: bottom;
+			transition:all 1.5s linear;
+			opacity: 1;
+		}
+		.rotate{transform: rotateZ(-150deg);opacity: .2;}
+		
+	#section3{background:#b1d466;}
+	#section4{background:#10d4fc;}
+		#sec4_1,#sec4_2,#sec4_3,.top_txt{position: absolute;top:50%;left:50%;transition: all 1.5s ease-in-out;}
+		#sec4_1{
+			width:13.1rem;
+			height:8.55rem;
+			margin-left:-6.55rem;
+			background:url(images/sec4-bg1.png) no-repeat;
+			-webkit-background-size: 13.1rem 8.55rem;
+			background-size: 13.1rem 8.55rem;
+			z-index:5;
+		}
+		#sec4_2,#sec4_3{
+			width:7.25rem;
+			height:12.4rem;
+			margin-left:-3.625rem;
+			margin-top:-7.2rem;
+			background:url(images/sec4-bg2.png) no-repeat;
+			-webkit-background-size: 7.25rem 12.4rem;
+			background-size: 7.25rem 12.4rem;
+		}
+		#sec4_3{
+			background:url(images/sec4-bg3.png) no-repeat;
+			-webkit-background-size: 7.25rem 12.4rem;
+			background-size: 7.25rem 12.4rem;
+		}
+		#sec4_txt{
+			width:8.6rem;
+			height:2.65rem;
+			margin-left:-4.3rem;
+			top:3rem;
+			background:url(images/sec4-txt.png) no-repeat;
+			-webkit-background-size: 8.6rem 2.65rem;
+			background-size: 8.6rem 2.65rem;
+		}
+		.goToright{-webkit-transform: translateX(200%);transform: translateX(200%);opacity: 0;}
+		.goToCenter{-webkit-transform: translateX(-200%);transform: translateX(-200%);opacity: 0;}
+	#section5{background:#ff465d;}
+		#sec5_1{
+			width:16rem;
+			height:9.8rem;
+			position: absolute;
+			top:50%;
+			left:50%;
+			transform: translate(-50%, -45%);
+			background:url(images/sec5-bg1.png) no-repeat;
+			background-size: 16rem 9.8rem;
+			z-index:5;
+		}
+		#sec5_2{
+			width:16rem;
+			height:6.45rem;
+			position:absolute;
+			top:20%;
+			left:50%;
+			margin-left: -8rem;
+			background:url(images/sec5-bg2.png) no-repeat;
+			-webkit-background-size: 16rem 6.45rem;
+			background-size: 16rem 6.45rem;
+
+		}
+		#sec5_3{
+			width:6.125rem;
+			height:1.2rem;
+			position:absolute;
+			top:67%;
+			left:50%;
+			margin-left: -3.0625rem;
+			background:url(images/sec5-share.png) no-repeat;
+			-webkit-background-size: 6.125rem 1.2rem;
+			background-size: 6.125rem 1.2rem;
+			border-radius:0.6rem ;
+		}
+		#sec5_4{
+			width:9rem;
+			height:2.1rem;
+			position:absolute;
+			top:74%;
+			left:50%;
+			margin-left: -4.5rem;
+			background:url(images/sec5-load.png) no-repeat;
+			-webkit-background-size: 9rem 2.1rem;
+			background-size: 9rem 2.1rem;
+			border-radius:1.05rem ;
+		}
+		#sec5_5{
+			width:4.2rem;
+			position:absolute;
+			top:83%;
+			left:50%;
+			margin-left: -1.5rem;
+			font-size:0.45rem;
+			color:#fff;
+			text-align: center;
+		}
+		#sec5_5:after{
+			content:'';
+			position:absolute;
+			top:50%;
+			margin-top: -10px;
+			left:-20px;
+			width:20px;
+			height:20px;
+			background:url(images/sec5-icon.png) no-repeat center;
+		}
+		#sec5_txt{
+			width:10.15rem;
+			height:4.25rem;
+			position:absolute;
+			top:4rem;
+			left:50%;
+			margin-left: -5.075rem;
+			background:url(images/sec5-txt.png);
+			-webkit-background-size: 10.15rem 4.25rem;
+			background-size: 10.15rem 4.25rem;
+		}
+		.shine{-webkit-animation: shine 1.2s linear 5; animation: shine 1.2s linear 5;}
+		@-webkit-keyframes shine{ 0%{-webkit-opacity:0;} 100%{-webkit-opacity:1;} }
+		@keyframes shine{ 0%{opacity:0;} 100%{opacity:1;} }
+
+		.changeBig{-webkit-animation: changing 1s ease-in-out; animation: changing 1s ease-in-out;}
+		@-webkit-keyframes changing{
+			
+			0%{-webkit-opacity:0;-webkit-background-size: 13rem 5.45rem; margin-left: -6.5rem;}
+			100%{-webkit-opacity:1;-webkit-background-size: 16rem 6.45rem; margin-left: -8rem;}
+		}
+		@keyframes changing{
+			0%{opacity:0; background-size: 13rem 5.45rem; margin-left: -6.5rem;}
+			100%{ opacity:1; background-size: 16rem 6.45rem; margin-left: -8rem;}
+		}
+        </style>
+        <script type="text/javascript">
+         	window.onload = function(){
+         		//加载即执行，根据不同大小字体图片等做相应变化
+         		var H = document.documentElement;
+         		getSize();
+         		function getSize(){
+         			// 获取屏幕宽度
+         			var screenWidth = H.clientWidth;
+                    if(screenWidth<=320)
+                    {
+                        H.style.fontSize = '19.8758px';
+                    }else if(screenWidth>640)
+                    {
+                        H.style.fontSize = '40px'
+                    }
+                    else
+                    {
+    				    H.style.fontSize = screenWidth/16.1+'px';
+                    }
+
+         		}
+         		// 当窗口发生改变就会触发这个事件
+         		window.onresize = function(){
+         			getSize();
+         		}
+         	}
+        </script>
+    </head>
+    <body>
+    	<div class="logo">进外宝</div>
+    	<div class="arrow start"></div>
+	    <div id="fullpage">
+	    	<div class="section" id="section1">
+	    		<h1 class="slogan">在东大门</h1>
+	    		<div class="con">
+    				<div id="sec_1" class=""></div>
+	    			<div id="sec_2" class=""></div>
+    				<div id="sec_3" class=""></div>
+    				<div id="sec_txt" class="bottom_txt"></div>
+	    		</div>
+	    	</div>
+	    	<div class="section" id="section2">
+				<h1 class="slogan">在家</h1>
+	    		<div class="con">
+    				<div id="sec2_1" class="rotate"></div>
+    				<div id="sec2_txt" class="bottom_txt"></div> 
+	    		</div>
+	    	</div>
+	    	<div class="section" id="section3">3</div>
+	    	<div class="section" id="section4">
+				<h1 class="slogan">在家</h1>
+	    		<div class="con">
+    				<div id="sec4_1" class=""></div>
+    				<div id="sec4_2" class=""></div>
+    				<div id="sec4_3" class="goToCenter"></div>
+    				<div id="sec4_txt" class="top_txt"></div> 
+	    		</div>
+	    	</div>
+	    	<div class="section" id="section5">
+				<h1 class="slogan">在家</h1>
+	    		<div class="con">
+    				<div id="sec5_1" class=""></div>
+    				<div id="sec5_2" class=""></div>
+    				<div id="sec5_3" class=""></div>
+    				<div id="sec5_4" class=""></div>
+    				<div id="sec5_5">期待为您服务...</div>
+    				<div id="sec5_txt" class=""></div> 
+	    		</div>
+	    	</div>
+    	</div>
+    </body>
+
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+    	initHide();
+    	setTimeout(function(){
+			$("#sec_1").show().addClass('fade');}, 200);
+		setTimeout(function(){
+			$("#sec_2").show().addClass('fromLeft');}, 2700);
+		setTimeout(function(){
+			$("#sec_3").show().addClass('fromRight');}, 3200);
+		setTimeout(function(){
+			$("#sec_txt").show().addClass('fromBottom');}, 4700);
+		
+	    $('#fullpage').fullpage({
+	    	anchors: ['page1', 'page2', 'page3', 'page4','page5'],
+	    	afterLoad:function(anchorLink, index){
+				if(index == 1){
+					setTimeout(function(){
+	    				$("#sec_1").show().addClass('fade');}, 200);
+	    			setTimeout(function(){
+	    				$("#sec_2").show().addClass('fromLeft');}, 2700);
+	    			setTimeout(function(){
+	    				$("#sec_3").show().addClass('fromRight');}, 3200);
+	    			setTimeout(function(){
+	    				$("#sec_txt").show().addClass('fromBottom');}, 4700);
+				}
+				if(index == 2){
+					setTimeout(function(){
+						$('#sec2_1').fadeIn(1500).removeClass('rotate');
+					}, 200);
+					setTimeout(function(){
+	    				$("#sec2_txt").show().addClass('fromBottom');}, 2000);
+				}
+
+				if(index == 3){
+					
+				}
+
+				if(index == 4){
+
+					$("#sec4_2").delay(500).fadeIn(1000);
+					setTimeout(function(){
+						$("#sec4_2").addClass('goToright');
+					}, 2500)
+					setTimeout(function(){
+						$("#sec4_3").fadeIn(1500).removeClass('goToCenter')
+					}, 3000)
+					
+					
+				}
+				
+				if(index == 5){
+					$("#sec5_2").fadeIn().addClass('changeBig');
+					$("#sec5_txt").delay(800).fadeIn(1000);
+
+					$("#sec5_3").delay(1200).fadeIn(1000);
+					$("#sec5_4").delay(1800).fadeIn(1000).addClass('shine');
+
+					$("#sec5_4").click(function() {
+						$("#sec5_4").removeClass('shine');
+					});
+					
+					
+				}
+				
+			},
+
+			onLeave: function(index, direction){
+				if(index == '1'){
+					setTimeout(function(){
+						$('#sec2_txt,#sec2_1').hide();
+						$("#sec2_1").addClass('rotate');
+					}, 200)
+
+				}
+				if(index == '2'){
+					setTimeout(function(){
+	    				$("#sec_1,#sec_2,#sec_3,#sec_txt").hide();}, 200);
+				}
+
+				if(index == '3'){
+					setTimeout(function(){
+	    				$('#sec2_txt,#sec2_1,#sec4_2').hide();
+	    				$("#sec2_1").addClass('rotate');
+	    				$("#sec4_3").addClass('goToCenter')
+						$("#sec4_2").removeClass('goToright');
+
+	    			}, 200);
+				}
+
+				if(index == '4'){
+					setTimeout(function(){
+						$("#sec5_2,#sec5_3,#sec5_4,#sec5_txt").hide()
+
+					}, 200)		
+				}
+				
+				if(index == '5'){
+					setTimeout(function(){
+	    				$('#sec4_2').hide();
+	    				$("#sec4_3").addClass('goToCenter');
+						$("#sec4_2").removeClass('goToright');
+
+	    			}, 200);		
+				}
+				
+			}
+			
+	    });
+	});
+
+	function initHide(){
+		$("#sec_1,#sec_2,#sec_3,#sec_txt,#sec2_1,sec2_txt,#sec4_2,#sec5_2,#sec5_3,#sec5_4,#sec5_txt").hide();
+		$("#sec2_1").addClass('rotate');
+		$("#sec4_3").addClass('goToCenter');
+		$("#sec4_2").removeClass('goToright');
+	}
+
+    </script>
+</html>
