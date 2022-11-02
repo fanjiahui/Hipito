@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>demo</title>
+    <link rel="Shortcut Icon" href="/favicon.ico" />
+    <style type="text/css">
+        body {
+            background-color: #25272b;
+            background-position: 54px 105px;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: #fff;
+            font-family: helvetica, arial, sans-serif;
+            font-size: 11pt;
+
+        }
+
+        a {
+            color: #F47920;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ff9536;
+            text-shadow: #F47920 0px 0px 2px;
+
+        }
+
+        h1 {
+            font-size: 140%;
+            margin: 2.5em 0 0 0;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            margin: 20px 0 0 0;
+            font-size: 100%;
+        }
+
+        img {
+            border: 0;
+        }
+
+        dl.comp {
+            font-size: 9pt;
+        }
+
+        dl.comp dt {
+            font-weight: bold;
+            float: left;
+            display: block;
+            width: 14em;
+            text-align: right;
+            margin-right: 0.5em;
+        }
+
+        dl.credits dt {
+            margin-top: 1em;
+        }
+
+        #canvas {
+            width: 950px;
+            height: 580px;
+            margin: 0px auto 0px auto;
+            border: 1px solid #3b3d42;
+            image-rendering: -moz-crisp-edges; /* firefox */
+            image-rendering: -webkit-optimize-contrast; /* chrome/safari */
+            -ms-interpolation-mode: nearest-neighbor; /* ie */
+        }
+
+        #noCanvas {
+            padding: 90px 32px;
+            font-weight: bold;
+            border: 1px solid #3b3d42;
+            background-color: #000;
+        }
+        .ad {
+            margin: 0 0 32px -124px;
+        }
+        .made-with-impact {
+            text-align: right;
+            margin: 3em 0 2em 0;
+        }
+    </style>
+</head>
+<body>
+<canvas id="canvas">
+    <div id="noCanvas">
+        <p>
+            Hey there, it looks like you're using Microsoft's Internet Explorer. Microsoft
+            hates the Web and doesn't support HTML5 :(
+        </p>
+        <p>
+            To play this game you need a good Browser, like
+            <a href="http://www.opera.com/">Opera</a>,
+            <a href="http://www.google.com/chrome">Chrome</a>,
+            <a href="http://www.mozilla.com/firefox/">Firefox</a> or
+            <a href="http://www.apple.com/safari/">Safari</a>.
+        </p>
+
+    </div>
+</canvas>
+<script src="../../bin/Sirius2d.1.1.0.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/Main.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    new demo.Main("canvas",350, 500);
+</script>
+</body>
+</html>
